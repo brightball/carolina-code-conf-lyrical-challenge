@@ -1,8 +1,24 @@
 # Lyrical Code Challenge for the Carolina Code Conference
 
-See the [announcement blog post](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop?sd=pf) for more details!
+See the [announcement blog post](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop?sd=pf) for full details!
 
-Carolina Code Conference Lyrical Code Challenge - Don't Stop Believin' by Journey
+The goal is to turn these song lyrics into code in any/every language you can think of. As entries come in if you think you can improve something, feel free to submit a PR doing exactly that. Assuming we get enough entries, we're going assemble the results into our 2023 Carolina Code Conference t-shirt.
+
+To enter, fork this repo and add a directory for the language you want to use. Then create a file using the song title and your github username, like so:
+
+```bash
+# Examples
+
+ruby/dont-stop-believin-brightball.rb
+
+java/DontStopBelievinBrightball.java
+
+elixir/dont-stop-believin-brightball.exs
+```
+
+Then just submit your PR! Bonus points and social media thank yous for broadcasting it and tagging us on your favorite social channels.
+
+Remember, it's more important that the code reads than actually compiles. This is going on a t-shirt, not your production server. Above all, have fun with it.
 
 ## Don't Stop Believin' - Journey
 
