@@ -2,7 +2,15 @@
 
 See the [announcement blog post](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop?sd=pf) for full details!
 
-The goal is to turn these song lyrics into code in any/every language you can think of. As entries come in if you think you can improve something, feel free to submit a PR doing exactly that. Assuming we get enough entries, we're going assemble the results into our 2023 Carolina Code Conference t-shirt.
+The goal is to turn these song lyrics (below) into code in any/every language you can think of. As entries come in if you think you can improve something, feel free to submit a PR doing exactly that. Assuming we get enough entries, we're going assemble the results into our 2023 Carolina Code Conference t-shirt.
+
+## What do you mean, song lyrics as code?
+
+A genius of some sort created this Bohemian Rhapsody as Code t-shirt. I own one and it's a lot of fun, so we're hoping to use it as inspiration for a polyglot version of the [song chosen by our poll](https://blog.carolina.codes/p/poll-song-code-t-shirt-challenge), Don't Stop Believin'.
+
+![image](https://user-images.githubusercontent.com/400920/235378344-93d0ef0a-0913-4109-bd4d-638d3da32eae.png)
+
+## How to submit a PR
 
 To enter, fork this repo and add a directory for the language you want to use. Then create a file using the song title and your github username, like so:
 
