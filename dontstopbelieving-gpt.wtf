@@ -1,0 +1,78 @@
+# A small town girl living in a lonely world
+// JavaScript
+const girl = new Person('small town');
+const world = new World('lonely');
+girl.moveToWorld(world);
+
+// She took the midnight train going anywhere
+// Python
+train = Train('midnight')
+girl.board(train)
+
+// Just a city boy, born and raised in South Detroit
+-- Lua
+boy = Person('city')
+boy.birthplace = 'South Detroit'
+
+// He took the midnight train going anywhere
+// Swift
+boy.board(train)
+
+// A singer in a smoky room, a smell of wine and cheap perfume
+// Ruby
+singer = Person.new('singer')
+room = Room.new('smoky')
+room.smell('wine', 'cheap perfume')
+singer.enter(room)
+
+// For a smile they can share the night
+// PHP
+singer.smile(girl)
+singer.smile(boy)
+girl.shareNight()
+boy.shareNight()
+
+// It goes on and on and on and on
+// C
+while (true) {
+  continuePlayingSong();
+}
+
+// Strangers waiting, up and down the boulevard
+// Go
+boulevard := Street('boulevard')
+strangers := make([]Person, 10)
+for i := range strangers {
+  stranger := Person{}
+  boulevard.wait(stranger)
+  strangers[i] = stranger
+}
+
+// Their shadows searching in the night
+// Rust
+let night = Time::new('night');
+for stranger in strangers.iter() {
+  stranger.search(night);
+}
+
+// Streetlights people, living just to find emotion
+// Java
+ArrayList<Person> people = new ArrayList<Person>();
+for (int i = 0; i < 10; i++) {
+  Person person = new Person();
+  person.job = "streetlight maintenance worker";
+  person.mission = "help people find emotion";
+  people.add(person);
+}
+
+// Hiding somewhere in the night
+// Kotlin
+for (person in people) {
+  person.hide(night);
+}
+
+// Don't stop believin', hold on to that feeling
+// Assembly
+while (true) {
+  holdOnToFeeling();
+}
