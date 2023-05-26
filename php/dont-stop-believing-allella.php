@@ -14,15 +14,15 @@ while (! $disbelief)
 	{
 	  $time = 'midnight';
 	  $destination = 'anywhere';
+
 	  $origin = 'small-town';
 	  $passenger = 'girl';
 	  $placeOfBirth = 'lonely world';
-
 	  $smallTownGirl = new Train ($origin, $destination, $passenger, $placeOfBirth, $time);
+
 	  $origin = 'city';
 	  $passenger = 'boy';
 	  $placeOfBirth = 'South Detroit';
-
 	  $cityBoy = new Train ($origin, $destination, $passenger, $placeOfBirth, $time);
 	} // end if, "Hold on to that feelin' Streetlights, people"
 
