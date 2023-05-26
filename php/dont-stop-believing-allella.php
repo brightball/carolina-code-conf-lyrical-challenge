@@ -6,7 +6,7 @@
 * Author: @allella
 */
 
-// while disbelief is FALSE
+// while there is not disbelief
 while (! $disbelief)
 {
 	// if streetlights, people, and holding on to a feelin' all exist
@@ -24,6 +24,6 @@ while (! $disbelief)
 	  $placeOfBirth = 'South Detroit';
 
 	  $cityBoy = new Train ($origin, $destination, $passenger, $placeOfBirth, $time);
-	} // end if, not stop believing
+	} // end if, "Hold on to that feelin' Streetlights, people"
 
 } // end while, still believing
