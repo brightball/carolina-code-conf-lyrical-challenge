@@ -26,4 +26,4 @@ while (! $disbelief)
 	  $cityBoy = new Train ($origin, $destination, $passenger, $placeOfBirth, $time);
 	} // end if, "Hold on to that feelin' Streetlights, people"
 
-} // end while, still believing
+} // end while, "Don't Stop Believin'"
