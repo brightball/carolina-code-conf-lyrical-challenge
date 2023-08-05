@@ -78,3 +78,8 @@ sub living() { $night =~ /emotion/; }                             # Perl
 ```php
 while($believing) { $feeling->holdOn(); }                         // PHP
 ```
+
+### Notice
+Concept was created for use on the Carolina Code Conference 2023 T-shirt.
+
+Copyright Brightball, Inc, all rights reserved.
