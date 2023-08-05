@@ -38,14 +38,14 @@ city_boy = Youth.new(sex: :male, born_raised: "South Detroit")    # Ruby
 ```erlang
 MidnightTrain !  { city_boy, "anywhere" }.                        % Erlang
 ```
-
+...
 
 ```yaml
 - tasks:                                                          # Ansible
   - name: "Awesome Guitar Solo"
     guitar: { style: solo, impact: legendary, state: present } 
 ```
-
+...
 
 ```csharp
 smokyRoom?.Occupants?.Add(singer);                                // C#
@@ -59,7 +59,7 @@ smokyRoom.setAromas(new Aromas[]{"Wine", "Cheap Perfume"});       // Java
 ```go
 it := make([]GoesOn, 4)                                           // Go
 ```
-
+...
 
 ```js
 await strangers.walk('boulevard', { directions: ['up','down'] }); // JS  
