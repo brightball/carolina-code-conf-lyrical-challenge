@@ -17,8 +17,8 @@ smokyRoom.setAromas(new Aromas[]{"Wine", "Cheap Perfume"});       // Java
 it := make([]GoesOn, 4)                                           // Go
 
 await strangers.walk('boulevard', { directions: ['up','down'] }); // JS  
-shadows.search(Time::new(night));                                 # Rust
-SELECT * FROM scene WHERE type IN ('streetlights','people')       -- SQL
+shadows.search(Time::new(night));                                 // Rust
+SELECT * FROM scenes WHERE prop IN ('streetlights','people')      -- SQL
 sub living() { $night =~ /emotion/; }                             # Perl
 
 while($believing) { $feeling->holdOn(); }                         // PHP
@@ -65,10 +65,10 @@ it := make([]GoesOn, 4)                                           // Go
 await strangers.walk('boulevard', { directions: ['up','down'] }); // JS  
 ```
 ```rust
-shadows.search(Time::new(night));                                 # Rust
+shadows.search(Time::new(night));                                 // Rust
 ```
 ```sql
-SELECT * FROM scene WHERE props IN ('streetlights','people')       -- SQL
+SELECT * FROM scenes WHERE prop IN ('streetlights','people')      -- SQL
 ```
 ```perl
 sub living() { $night =~ /emotion/; }                             # Perl
