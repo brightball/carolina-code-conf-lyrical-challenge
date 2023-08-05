@@ -23,3 +23,18 @@ sub living() { $night =~ /emotion/; }                             # Perl
 
 while($believing) { $feeling->holdOn(); }                         // PHP
 ```
+
+### Lines separated for code highlighting in Github
+
+```python
+from lonely_world import small_town_girl                          # Python
+```
+```elixir
+send(MidnightTrain, {:anywhere, small_town_girl})                 # Elixir
+```
+```ruby
+city_boy = Youth.new(sex: :male, born_raised: "South Detroit")    # Ruby
+```
+```erlang
+MidnightTrain !  { city_boy, "anywhere" }.                        % Erlang
+```
