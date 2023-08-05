@@ -1,0 +1,4 @@
+---
+- tasks: 
+  - name: "Awesome Guitar Solo" # cool
+    guitar: { style: solo, impact: legendary, state: present } 
