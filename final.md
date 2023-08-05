@@ -68,7 +68,7 @@ await strangers.walk('boulevard', { directions: ['up','down'] }); // JS
 shadows.search(Time::new(night));                                 # Rust
 ```
 ```sql
-SELECT * FROM scene WHERE type IN ('streetlights','people')       -- SQL
+SELECT * FROM scene WHERE props IN ('streetlights','people')       -- SQL
 ```
 ```perl
 sub living() { $night =~ /emotion/; }                             # Perl
