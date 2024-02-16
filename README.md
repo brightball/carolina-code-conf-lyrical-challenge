@@ -32,18 +32,7 @@ Then just submit your PR! Bonus points and social media thank yous for broadcast
 
 Remember, it's more important that the code reads than actually compiles. This is going on a t-shirt, not your production server. Above all, have fun with it.
 
-Here's an example to get you started.
-
-```ruby
-girl = Person.new(sex: 'female', age: 18, from: 'a small town')
-girl.currently_lives_in = 'a lonely world'
-
-train = Transportation.new(type: 'train', departs_at: 'midnight', destination: 'anywhere')
-girl.transport(train)
-
-boy = Person.new(sex: 'male', age: 18, from: 'South Detroit')
-boy.transport(train)
-```
+Feel free to reference the original shirt, last year's version and any of the included submissions from last year for inspiration and examples.
 
 ## Bohemian Rhapsody
 
