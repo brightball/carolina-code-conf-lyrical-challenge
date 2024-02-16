@@ -10,6 +10,8 @@ The goal is to turn these song lyrics (below) into code in any/every language yo
 
 A genius of some sort created this Bohemian Rhapsody as Code t-shirt. I own one and it's a lot of fun, so we used it as an [inspiration to for a polyglot version](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop) of [Don't Stop Believing in 2023](https://blog.carolina.codes/p/our-crowdsourced-shirt-is-ready). The shirts were such as hit that we've decided to turn it into an annual event, selecting a new song each year.
 
+![f26ec37b-011b-400d-8a9e-fc0842559160_1107x681](https://github.com/brightball/carolina-code-conf-lyrical-challenge/assets/400920/37732e87-2424-4d22-98ec-8a501fd0e19f)
+
 This year after [20 songs were nominated](https://blog.carolina.codes/p/round-1-2024-lyrical-code-challenge), we had 2 rounds of voting [before selecting...Bohemian Rhapsody](https://blog.carolina.codes/p/final-round-cast-your-vote-for-this)! It was going to happen eventually so this is the year.  You can use the original shirt as inspiration, but don't be afraid to be creative with your favorite language!
 
 Here's this year's official announcement.
