@@ -14,7 +14,7 @@ A genius of some sort created this Bohemian Rhapsody as Code t-shirt. I own one 
 
 This year after [20 songs were nominated](https://blog.carolina.codes/p/round-1-2024-lyrical-code-challenge), we had 2 rounds of voting [before selecting...Bohemian Rhapsody](https://blog.carolina.codes/p/final-round-cast-your-vote-for-this)! It was going to happen eventually so this is the year.  You can use the original shirt as inspiration, but don't be afraid to be creative with your favorite language!
 
-Here's this year's official announcement.
+Here's this year's [official announcement](https://blog.carolina.codes/p/easy-come-easy-go-will-you-let-mecode).
 
 ## How to submit a PR
 
