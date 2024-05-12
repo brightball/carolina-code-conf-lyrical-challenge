@@ -9,7 +9,7 @@
 function intro()
 {
     try {
-        ($this->life == 'real' ? ($this == 'just fantasy' ? : '') : '';
+        ($this->life == 'real' ? ($this->just == 'fantasy' ? : '') : '';
     } catch (Landslide $a) {
        $from = ! esc('reality')
     }
