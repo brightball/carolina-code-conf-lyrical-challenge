@@ -6,9 +6,10 @@
 % and leading into
 %       I see a little silhouetto of a man
 
+\version "2.24.3"    % remove 'version' warning
 \language "english"  % default naming convention is Dutch note names
 \score {
-  \relative c''' {  % most notes are above the treble clef
+  \relative c''' {   % most notes are above the treble clef
     \key ef \major
 
     r4 g8 f16 ef bf'4. g8 c2 c8 d16 ef c8 d16 ef f2 f16 g af bf c4
