@@ -1,0 +1,11 @@
+query {
+  mama {
+    justKilled(aMan: true)
+    putAGunAgainst(hishead: true)
+    pulledMyTrigger(heIsDead: true) 
+    lifeHad(justBegun: true)
+    butNowIGoneAnd(thrownItAllAway: true)
+    meanToMakeYouCry(intention: false)
+    ifImNotBackAgain(byWhen: "thisTimeTomorrow", carryOn1: true, carryOn2: true)
+  }
+}
