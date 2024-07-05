@@ -6,6 +6,9 @@ query {
     lifeHad(justBegun: true)
     butNowIGoneAnd(thrownItAllAway: true)
     meanToMakeYouCry(intention: false)
-    ifImNotBackAgain(byWhen: "thisTimeTomorrow", carryOn1: true, carryOn2: true)
+    ifImNotBackAgain(byWhen: "thisTimeTomorrow") {
+      carryOn
+      carryOn
+    }
   }
 }
