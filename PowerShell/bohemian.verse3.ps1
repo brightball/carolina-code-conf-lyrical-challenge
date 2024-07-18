@@ -8,7 +8,7 @@ $IC | Where-Object -FilterScript {$_.size -like 'little' } | Get-Member -MemberT
 # Verse 3 Line 2
 #Scaramouche, Scaramouche, will you do the Fandango?
 $WillYouDoThe = "Scaramouche"
-Write-Host "$WillYouDoThe $([regex]::Replace($($(Get-Variable -Name WillYouDoThe).Name), '(?<!^)([A-Z])', ' $1').ToLower()) $($WillYouDoThe -replace "S", "F" -replace "cara", "and" -replace "mouche", "ango")"
+Write-Host "$WillYouDoThe, $WillYouDoThe, $([regex]::Replace($($(Get-Variable -Name WillYouDoThe).Name), '(?<!^)([A-Z])', ' $1').ToLower()) $($WillYouDoThe -replace "S", "F" -replace "cara", "and" -replace "mouche", "ango")?"
 
 # Verse 3 Lines 9 through 15
 $letMeGo = $false
