@@ -21,7 +21,7 @@ def really_matters(:wind, _direction), do: false                  # Elixir
 
 pkill -SIGKILL --parent $(pidof man) >> log/notify_mama.log       # Bash
 
-\header {                                                         % lilypond
+\header {                                                         % Lilypond
   instrument = "guitar"
   title = "Epic Solo"
 }
@@ -76,7 +76,7 @@ def really_matters(:wind, _direction), do: false                  # Elixir
 pkill -SIGKILL --parent $(pidof man) >> log/notify_mama.log       # Bash
 ```
 ```lilypond
-\header {                                                         % lilypond
+\header {                                                         % Lilypond
   instrument = "guitar"
   title = "Epic Solo"
 }
