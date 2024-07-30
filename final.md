@@ -81,7 +81,7 @@ pkill -SIGKILL --parent $(pidof man) >> log/notify_mama.log       # Bash
   title = "Epic Solo"
 }
 \score {
-  \relative c''' {   % lilypond
+  \relative c''' {
     \key ef \major
 
     r4 g8 f16 ef bf'4. g8 c2 c8 d16 ef c8 d16 ef f2 f16 g af bf c4
