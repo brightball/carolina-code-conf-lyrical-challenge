@@ -17,7 +17,7 @@ i?.Sympathies?.clear();                                           // C#
 SELECT * FROM myself WHERE                                        -- SQL
   come = "easy" AND go = "easy" AND high <= 0.1 AND low <= 0.1
 
-def really_matters(:wind, _direction), do: false                  # Elixir
+def really_matters?(:wind, _direction), do: false                 # Elixir
 
 pkill -SIGKILL --parent $(pidof man) >> log/notify_mama.log       # Bash
 
@@ -70,7 +70,7 @@ SELECT * FROM myself WHERE                                        -- SQL
   come = "easy" AND go = "easy" AND high <= 0.1 AND low <= 0.1
 ```
 ```elixir
-def really_matters(:wind, _direction), do: false                  # Elixir
+def really_matters?(:wind, _direction), do: false                 # Elixir
 ```
 ```bash
 pkill -SIGKILL --parent $(pidof man) >> log/notify_mama.log       # Bash
