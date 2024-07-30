@@ -2,7 +2,7 @@
 ## A Polyglot and Cybersecurity Conference for All Who Code
 
 ```
-is_a($life, 'Real');                                              # PHP
+$this->life->is_real();                                           // PHP
 Life.fantasy?                                                     # Ruby
 
 except Landslide as e:                                            # Python
@@ -42,7 +42,7 @@ pkill -SIGKILL --parent $(pidof man) >> log/notify_mama.log       # Bash
 # Lines separated for code highlighting in Github
 
 ```php
-is_a($life, 'Real');                                              # PHP
+$this->life->is_real();                                           // PHP
 ```
 ```ruby
 Life.fantasy?                                                     # Ruby
