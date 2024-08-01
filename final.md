@@ -6,7 +6,7 @@ $this->life->is_real();                                           // PHP
 Life.fantasy?                                                     # Ruby
 
 except Landslide as e:                                            # Python
-!$reality->header('X-Scape');                                     # Perl
+  !$reality->header('X-Scape');                                   # Perl
 
 FILE *eyes = fopen("your.eyes", "r")                              // C
 eyes.map( _.look(Direction.Skies) ).map( _.see() )                // Scala
@@ -51,7 +51,7 @@ Life.fantasy?                                                     # Ruby
 except Landslide as e:                                            # Python
 ```
 ```perl
-!$reality->header('X-Scape');                                     # Perl
+  !$reality->header('X-Scape');                                   # Perl
 ```
 ```c
 FILE *eyes = fopen("your.eyes", "r");                             // C
