@@ -1,5 +1,7 @@
 # Lyrical Code Challenge 2024 for the Carolina Code Conference
 
+See the reveal for the [completed version for 2024](https://blog.carolina.codes/p/our-2024-lyrical-code-t-shirt-is)!
+
 See the [announcement blog post](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop?sd=pf) for full details!
 
 The goal is to turn these song lyrics (below) into code in any/every language you can think of. As entries come in if you think you can improve something, feel free to submit a PR doing exactly that. Assuming we get enough entries, we're going assemble the results into our 2024 Carolina Code Conference t-shirt.
