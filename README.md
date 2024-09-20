@@ -1,20 +1,18 @@
-# Lyrical Code Challenge 2024 for the Carolina Code Conference
+# Lyrical Code Challenge for the 2025 Carolina Code Conference
 
-See the [announcement blog post](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop?sd=pf) for full details!
+This will be our 3rd years in a row with our polyglot, lyrical code t-shirt and we're excited!
 
-The goal is to turn these song lyrics (below) into code in any/every language you can think of. As entries come in if you think you can improve something, feel free to submit a PR doing exactly that. Assuming we get enough entries, we're going assemble the results into our 2024 Carolina Code Conference t-shirt.
+The goal is to turn these song lyrics (below) into code in any/every language you can think of. As entries come in if you think you can improve something, feel free to submit a PR doing exactly that. Assuming we get enough entries, we're going assemble the results into our 2025 Carolina Code Conference t-shirt.
 
 ## What do you mean, song lyrics as code?
 
-![image](https://user-images.githubusercontent.com/400920/235378344-93d0ef0a-0913-4109-bd4d-638d3da32eae.png)
+![image](https://github.com/user-attachments/assets/8e9726b8-3cf3-487f-85c9-354bb6bf8282)
 
-A genius of some sort created this Bohemian Rhapsody as Code t-shirt. I own one and it's a lot of fun, so we used it as an [inspiration to for a polyglot version](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop) of [Don't Stop Believing in 2023](https://blog.carolina.codes/p/our-crowdsourced-shirt-is-ready). The shirts were such as hit that we've decided to turn it into an annual event, selecting a new song each year.
+A genius of some sort created this [Bohemian Rhapsody as Code t-shirt](https://user-images.githubusercontent.com/400920/235378344-93d0ef0a-0913-4109-bd4d-638d3da32eae.png). I own one and it's a lot of fun, so we used it as an [inspiration to for a polyglot version](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop) of [Don't Stop Believing in 2023](https://blog.carolina.codes/p/our-crowdsourced-shirt-is-ready) and then paid homage to the original with our polyglot [Bohemian Rhapsody shirt in 2024](https://blog.carolina.codes/p/our-2024-lyrical-code-t-shirt-is). The shirts were such as hit that we've decided to turn it into an annual event, selecting a new song each year and with participants [finding more ways to be creative](lilypond/bohemianrhapsody.chruck.ly).
 
-![f26ec37b-011b-400d-8a9e-fc0842559160_1107x681](https://github.com/brightball/carolina-code-conf-lyrical-challenge/assets/400920/37732e87-2424-4d22-98ec-8a501fd0e19f)
+For 2025, we let our 2024 conference attendees vote over 2 days to pick the song. First an [initial round with 20 songs in 5 brackets](https://blog.carolina.codes/p/round-1-2025-lyrical-code-challenge), followed by a [final round with the bracket winners](https://blog.carolina.codes/p/lyrical-code-challenge-2025-final) where All Star by Smash Mouth won for 2025!
 
-This year after [20 songs were nominated](https://blog.carolina.codes/p/round-1-2024-lyrical-code-challenge), we had 2 rounds of voting [before selecting...Bohemian Rhapsody](https://blog.carolina.codes/p/final-round-cast-your-vote-for-this)! It was going to happen eventually so this is the year.  You can use the original shirt as inspiration, but don't be afraid to be creative with your favorite language!
-
-Here's this year's [official announcement](https://blog.carolina.codes/p/easy-come-easy-go-will-you-let-mecode).
+Here's this year's [official announcement](https://blog.carolina.codes/i/148154944/youre-an-all-star) in the [2024 wrap up post](https://blog.carolina.codes/p/2024-carolina-code-conference-wrap).
 
 ## How to submit a PR
 
@@ -23,79 +21,73 @@ To enter, fork this repo and add a directory for the language you want to use. T
 ```bash
 # Examples
 
-ruby/bohemian-rhapsody-brightball.rb
+ruby/all-star-brightball.rb
 
-java/BohemianRhapsodyBrightball.java
+java/AllStarBrightball.java
 
-elixir/bohemian-rhapsody-brightball.exs
+elixir/all-star-brightball.exs
 ```
 
-Then just submit your PR! Bonus points and social media thank yous for broadcasting it and tagging us on your favorite social channels.
+Then just submit your PR! Bonus points and social media thank yous for broadcasting it and tagging us on your favorite social channels. You can do specific versese, specific lines or the entire song if you like!
 
-Remember, it's more important that the code reads than actually compiles. This is going on a t-shirt, not your production server. Above all, have fun with it.
+Remember, it's more important that the code reads than actually compiles. This is going on a t-shirt, not your production server. The goal is to create an experience where you can't help but sing the song in your head as you read each line of the code.
 
-Feel free to reference the original shirt, last year's version and any of the included submissions from last year for inspiration and examples.
+Feel free to reference 2023's [Don't Stop Believing](completed_versions/dontstopbelieving/final.md) and 2024's [Bohemian Rhapsody](completed_versions/bohemianrhapsody/final.md) for inspiration and examples.  Above all, have fun with it.
 
-## Bohemian Rhapsody
+## All Star - Smash Mouth
 
-[Lyrics](https://genius.com/Queen-bohemian-rhapsody-lyrics) | [Music Video](https://www.youtube.com/watch?v=fJ9rUzIMcZQ) | [Wayne's World Version](https://www.youtube.com/watch?v=thyJOnasHVE)
+[Lyrics](https://genius.com/Smash-mouth-all-star-lyrics) | [Music Video](https://www.youtube.com/watch?v=L_jWHffIx5E)
 
 ```
-[Intro]
-Is this the real life? Is this just fantasy?
-Caught in a landslide, no escape from reality
-Open your eyes, look up to the skies and see
-I'm just a poor boy, I need no sympathy
-Because I'm easy come, easy go, little high, little low
-Any way the wind blows doesn't really matter to me, to me
-
 [Verse 1]
-Mama, just killed a man
-Put a gun against his head, pulled my trigger, now he's dead
-Mama, life had just begun
-But now I've gone and thrown it all away
-Mama, ooh, didn't mean to make you cry
-If I'm not back again this time tomorrow
-Carry on, carry on as if nothing really matters
+Somebody once told me the world is gonna roll me
+I ain't the sharpest tool in the shed
+She was looking kind of dumb with her finger and her thumb
+In the shape of an "L" on her forehead
+
+[Pre-Chorus]
+Well, the years start comin' and they don't stop comin'
+Fed to the rules and I hit the ground runnin'
+Didn't make sense not to live for fun
+Your brain gets smart but your head gets dumb
+So much to do, so much to see
+So what's wrong with taking the backstreets?
+You'll never know if you don't go
+You'll never shine if you don't glow
+
+[Chorus]
+Hey now, you're an all star
+Get your game on, go play
+Hey now, you're a rock star
+Get the show on, get paid
+(And all that glitters is gold)
+Only shootin' stars break the mold
 
 [Verse 2]
-Too late, my time has come
-Sends shivers down my spine, body's aching all the time
-Goodbye, everybody, I've got to go
-Gotta leave you all behind and face the truth
-Mama, ooh (Any way the wind blows)
-I don't wanna die
-I sometimes wish I'd never been born at all
+It's a cool place, and they say it gets colder
+You're bundled up now, wait 'til you get older
+But the meteor men beg to differ
+Judging by the hole in the satellite picture
+The ice we skate is gettin' pretty thin
+The water's gettin' warm so you might as well swim
+My world's on fire, how 'bout yours?
+That's the way I like it and I'll never get bored
+See Smash Mouth Live
+Get tickets as low as $69
+You might also like
+Family Matters
+Drake
+Big Foot (A Cappella)
+Nicki Minaj
+Demons
+Doja Cat
+[Chorus]
+Hey now, you're an all star
+Get your game on, go play
+Hey now, you're a rock star
+Get the show on, get paid
+(All that glitters is gold)
+Only shootin' stars break the mold
 
-[Verse 3]
-I see a little silhouetto of a man
-Scaramouche, Scaramouche, will you do the Fandango?
-Thunderbolt and lightning, very, very frightening me
-(Galileo) Galileo, (Galileo) Galileo, Galileo Figaro magnifico
-But I'm just a poor boy, nobody loves me
-He's just a poor boy from a poor family
-Spare him his life from this monstrosity
-Easy come, easy go, will you let me go?
-Bismillah! No, we will not let you go
-(Let him go) Bismillah! We will not let you go
-(Let him go) Bismillah! We will not let you go
-(Let me go) Will not let you go
-(Let me go) Will not let you go
-(Never, never, never, never let me go) Ah
-No, no, no, no, no, no, no
-(Oh, mamma mia, mamma mia) Mamma mia, let me go
-Beelzebub has a devil put aside for me, for me, for me!
-
-[Verse 4]
-So you think you can stone me and spit in my eye?
-So you think you can love me and leave me to die?
-Oh, baby, can't do this to me, baby!
-Just gotta get out, just gotta get right outta here
-[Outro]
-(Ooh)
-(Ooh, yeah, ooh, yeah)
-Nothing really matters, anyone can see
-Nothing really matters
-Nothing really matters to me
-Any way the wind blows
+...
 ```
