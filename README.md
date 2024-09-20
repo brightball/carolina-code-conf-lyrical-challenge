@@ -6,6 +6,8 @@ The goal is to turn these song lyrics (below) into code in any/every language yo
 
 ## What do you mean, song lyrics as code?
 
+![image](https://github.com/user-attachments/assets/8e9726b8-3cf3-487f-85c9-354bb6bf8282)
+
 A genius of some sort created this [Bohemian Rhapsody as Code t-shirt](https://user-images.githubusercontent.com/400920/235378344-93d0ef0a-0913-4109-bd4d-638d3da32eae.png). I own one and it's a lot of fun, so we used it as an [inspiration to for a polyglot version](https://blog.carolina.codes/p/lyrical-code-challenge-dont-stop) of [Don't Stop Believing in 2023](https://blog.carolina.codes/p/our-crowdsourced-shirt-is-ready) and then paid homage to the original with our polyglot [Bohemian Rhapsody shirt in 2024](https://blog.carolina.codes/p/our-2024-lyrical-code-t-shirt-is). The shirts were such as hit that we've decided to turn it into an annual event, selecting a new song each year and with participants finding more ways to be creative.
 
 For 2025, we let our 2024 conference attendees vote over 2 days to pick the song. First an [initial round with 20 songs in 5 brackets](https://blog.carolina.codes/p/round-1-2025-lyrical-code-challenge), followed by a [final round with the bracket winners](https://blog.carolina.codes/p/lyrical-code-challenge-2025-final) where All Star by Smash Mouth won for 2025!
