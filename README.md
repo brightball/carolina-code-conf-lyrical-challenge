@@ -72,15 +72,7 @@ The ice we skate is gettin' pretty thin
 The water's gettin' warm so you might as well swim
 My world's on fire, how 'bout yours?
 That's the way I like it and I'll never get bored
-See Smash Mouth Live
-Get tickets as low as $69
-You might also like
-Family Matters
-Drake
-Big Foot (A Cappella)
-Nicki Minaj
-Demons
-Doja Cat
+
 [Chorus]
 Hey now, you're an all star
 Get your game on, go play
