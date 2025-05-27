@@ -1,0 +1,3 @@
+// "Your brain gets smart but your head gets dumb"
+float brainIQ = smoothstep(0.0, 1.0, u_time); // Smart over time
+float headWisdom = 1.0 - brainIQ;             // But also dumb...
