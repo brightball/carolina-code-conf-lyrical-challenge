@@ -22,7 +22,7 @@ EXPLAIN COSTS SELECT * FROM streets WHERE type = 'back';                        
 $you->setKnowledge($you->go() ? true : false);                                  // PHP
 you.shine = if you.glow { true } else { false };                                // Rust
 
-MOVE "All Star" TO IDENTITY(1).                                                  *> COBOL
+MOVE "All Star" TO IDENTITY(1).                                                 *> COBOL
 var game: Game = Game.>play()                                                   // Pony
 
 you.identities.push(new Identity("Rock Star"));                                 // Java
