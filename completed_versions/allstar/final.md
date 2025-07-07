@@ -1,5 +1,5 @@
 # Carolina Code Conference 2025
-## A Polyglot and Cybersecurity Conference for All Who Code
+## The Polyglot and Cybersecurity Conference for All Who Code
 
 ```
 somebody.tellOnce(me, { message: "The world is going to roll you" });           // JavaScript
