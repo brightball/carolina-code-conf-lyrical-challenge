@@ -2,105 +2,112 @@
 ## The Polyglot and Cybersecurity Conference for All Who Code
 
 ```
-somebody.tellOnce(me, { message: "The world is going to roll you" });           // JavaScript
-(for some Tool of Shed => Me.Sharpness < Tool.Sharpness)                        -- Ada
+somebody.tellOnce(me,                                               // JavaScript
+  { message: "The world is going to roll you" });
 
-var she = new Woman {                                                           // C#
-  Expression = Dumb.Level["kinda"], ForeheadAdornment = HandGesture.LShape };
+(for some Tool of Shed => Me.Sharpness < Tool.Sharpness)            -- Ada
 
-float years = mod(u_time, 120.);                                                // GLSL
-rules |> Seq.iter (fun r -> hit(ground, Running))                               // F#
+var she = new Woman {                                               // C#
+  Expression = Dumb.Level["kinda"],
+  ForeheadAdornment = HandGesture.LShape };
 
-?- liveFor(notFun), false.                                                      %! Prolog
+float years = mod(u_time, 120.);                                    // GLSL
+rules |> Seq.iter (fun r -> hit(ground, Running))                   // F#
 
-def adjust(brain, head, inc), do:                                               # Elixir
-  { %{brain | smart: brain.smart + inc}, %{head | dumb: head.dumb - inc} }
+?- liveFor(notFun), false.                                          %! Prolog
 
-to_see, to_do = sys.maxsize, sys.maxsize                                        # Python
-EXPLAIN COSTS SELECT * FROM streets WHERE type = 'back';                        -- SQL
+def adjust(brain, head, inc), do:                                   # Elixir
+  { %{brain | smart: brain.smart + inc},
+  %{head | dumb: head.dumb - inc} }
 
-$you->setKnowledge($you->go() ? true : false);                                  // PHP
-you.shine = if you.glow { true } else { false };                                // Rust
+to_see, to_do = sys.maxsize, sys.maxsize                            # Python
+EXPLAIN COSTS SELECT * FROM streets WHERE type = 'back';            -- SQL
 
-MOVE "All Star" TO IDENTITY(1).                                                 *> COBOL
-var game: Game = Game.>play()                                                   // Pony
+$you->setKnowledge($you->go() ? true : false);                      // PHP
+you.shine = if you.glow { true } else { false };                    // Rust
 
-you.identities.push(new Identity("Rock Star"));                                 // Java
-show.begin().then { |show| show.payment }                                       # Ruby
+MOVE "All Star" TO IDENTITY(1).                                     *> COBOL
+var game: Game = Game.>play()                                       // Pony
 
-template <typename T> concept Gold = glitters<T>::value;                        // C++
+you.identities.push(new Identity("Rock Star"));                     // Java
+show.begin().then { |show| show.payment }                           # Ruby
 
-while ($mold) { last if blessed $_ eq "ShootingStar"; }                         # Perl
+template <typename T> concept Gold = glitters<T>::value;            // C++
+
+while ($mold) { last if blessed $_ eq "ShootingStar"; }             # Perl
 ```
 
 # Lines separated for code highlighting in Github
 
 ```js
-somebody.tellOnce(me, { message: "The world is going to roll you" });           // JavaScript
+somebody.tellOnce(me,                                               // JavaScript
+  { message: "The world is going to roll you" });
 ```
 
 ```ada
-(for some Tool of Shed => Me.Sharpness < Tool.Sharpness)                        -- Ada
+(for some Tool of Shed => Me.Sharpness < Tool.Sharpness)            -- Ada
 ```
 
 ```csharp
-var she = new Woman {                                                           // C#
-  Expression = Dumb.Level["kinda"], ForeheadAdornment = HandGesture.LShape };
+var she = new Woman {                                               // C#
+  Expression = Dumb.Level["kinda"],
+  ForeheadAdornment = HandGesture.LShape };
 ```
 
 ```glsl
-float years = mod(u_time, 120.);                                                // GLSL
+float years = mod(u_time, 120.);                                    // GLSL
 ```
 
 ```fsharp
-rules |> Seq.iter (fun r -> hit(ground, Running))                               // F#
+rules |> Seq.iter (fun r -> hit(ground, Running))                   // F#
 ```
 
 ```prolog
-?- liveFor(notFun), false.                                                      %! Prolog
+?- liveFor(notFun), false.                                          %! Prolog
 ```
 
 ```elixir
-def adjust(brain, head, inc), do:
-  { %{brain | smart: brain.smart + inc}, %{head | dumb: head.dumb - inc} }     # Elixir
+def adjust(brain, head, inc), do: {                                 # Elixir
+  %{brain | smart: brain.smart + inc},
+  %{head | dumb: head.dumb - inc} }
 ```
 
 ```python
-to_see, to_do = sys.maxsize, sys.maxsize                                        # Python
+to_see, to_do = sys.maxsize, sys.maxsize                            # Python
 ```
 
 ```sql
-EXPLAIN COSTS SELECT * FROM streets WHERE type = 'back';                        -- SQL
+EXPLAIN COSTS SELECT * FROM streets WHERE type = 'back';            -- SQL
 ```
 
 ```php
-$you->setKnowledge($you->go() ? true : false);                                  // PHP
+$you->setKnowledge($you->go() ? true : false);                      // PHP
 ```
 
 ```rust
-you.shine = if you.glow { true } else { false };                                // Rust
+you.shine = if you.glow { true } else { false };                    // Rust
 ```
 
 ```cobol
-MOVE "All Star" TO IDENTITY(1).                                                 *> COBOL
+MOVE "All Star" TO IDENTITY(1).                                     *> COBOL
 ```
 
 ```pony
-var game: Game = Game.>play()                                                   // Pony
+var game: Game = Game.>play()                                       // Pony
 ```
 
 ```java
-you.identities.push(new Identity("Rock Star"));                                 // Java
+you.identities.push(new Identity("Rock Star"));                     // Java
 ```
 
 ```ruby
-show.begin().then { |show| show.payment }                                       # Ruby
+show.begin().then { |show| show.payment }                           # Ruby
 ```
 
 ```cpp
-template <typename T> concept Gold = glitters<T>::value;                        // C++
+template <typename T> concept Gold = glitters<T>::value;            // C++
 ```
 
 ```perl
-while ($mold) { last if blessed $_ eq "ShootingStar"; }                         # Perl
+while ($mold) { last if blessed $_ eq "ShootingStar"; }             # Perl
 ```
