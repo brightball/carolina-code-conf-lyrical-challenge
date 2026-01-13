@@ -16,7 +16,7 @@ Here are the results of our prior years:
 - 2024 - [Bohemian Rhapsody - Queen](https://github.com/brightball/carolina-code-conf-lyrical-challenge/blob/main/completed_versions/bohemianrhapsody/final.md)
 - 2025 - [Allstar - Smash Mouth](https://github.com/brightball/carolina-code-conf-lyrical-challenge/blob/main/completed_versions/allstar/final.md)
 
-For 2026...we have been ["Rickrolled"](https://en.wikipedia.org/wiki/Rickrolling) (*smh*). We all saw it coming the moment that Rick Astley's "Never Gonna Give You Up" appeared on the nominations for this year...and it did. Here's [this year's official announcement](https://blog.carolina.codes/i/171655195/weve-been-rickrolled) in the [2025 Recap Post](https://blog.carolina.codes/p/2025-recap-finally).
+For 2026...we have been ["Rickrolled"](https://en.wikipedia.org/wiki/Rickrolling) (*smh*). We all saw it coming the moment that Rick Astley's "Never Gonna Give You Up" [appeared on the nominations](https://blog.carolina.codes/p/round-1-2026-lyrical-code-challenge) for this year...[and it did](https://blog.carolina.codes/p/final-four-2026-lyrical-code-challenge). Here's [this year's official announcement](https://blog.carolina.codes/i/171655195/weve-been-rickrolled) in the [2025 Recap Post](https://blog.carolina.codes/p/2025-recap-finally).
 
 ## How to submit a PR
 
