@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Never Gonna Give You Up — Commitment Protocol</title>
+  <meta name="description" content="Accessible commitment vow: never gonna give you up, let you down, desert you, make you cry, say goodbye, or tell a lie and hurt you.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1a1a1a;
+      --bg: #ffffff;
+      --link: #0047ab;
+      --focus: #0047ab;
+      --border: #333333;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f5f5f5;
+        --bg: #121212;
+        --link: #8cb4ff;
+        --focus: #8cb4ff;
+        --border: #cccccc;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      font-size: 100%;
+      line-height: 1.5;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a { color: var(--link); }
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+    }
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+    main { max-width: 48rem; margin: 0 auto; padding: 1rem; }
+    section { margin-block: 2rem; border-block-start: 1px solid var(--border); padding-block-start: 1rem; }
+    fieldset { margin-block: 1rem; border: 1px solid var(--border); }
+    legend { padding: 0 0.5rem; font-weight: 700; }
+    button[disabled] { cursor: not-allowed; opacity: 0.65; }
+  </style>
+</head>
+<body data-gonna="false" data-ever="false">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header role="banner">
+    <h1 id="page-title">Never Gonna Give You Up</h1>
+    <p id="page-summary">A full commitment vow between us and you. Strangers to love: false.</p>
+  </header>
+
+  <main id="main" tabindex="-1" aria-labelledby="page-title" aria-describedby="page-summary">
+
+    <!-- [Verse 1] -->
+    <section id="verse-1" aria-labelledby="verse-1-heading">
+      <h2 id="verse-1-heading">Verse 1</h2>
+
+      <!-- We're no strangers to love -->
+      <!-- You know the rules and so do I -->
+      <dl aria-label="Relationship baseline">
+        <dt>Strangers to love</dt>
+        <dd><data value="false">false</data></dd>
+        <dt>You know the rules</dt>
+        <dd><data value="true">true</data></dd>
+        <dt>And so do I</dt>
+        <dd><data value="true">true</data></dd>
+      </dl>
+
+      <!-- A full commitment's what I'm thinkin' of -->
+      <p id="thinking-of">
+        <strong>Thinking of:</strong>
+        <span aria-label="full commitment">full commitment</span>
+      </p>
+
+      <!-- You wouldn't get this from any other guy -->
+      <ul aria-label="Other guys excluded" role="list">
+        <li><span class="visually-hidden">Exclude:</span> i</li>
+        <li><span class="visually-hidden">Gives this:</span> false</li>
+      </ul>
+    </section>
+
+    <!-- [Pre-Chorus] -->
+    <section id="pre-chorus-1" aria-labelledby="pre-chorus-1-heading">
+      <h2 id="pre-chorus-1-heading">Pre-Chorus</h2>
+
+      <!-- I just wanna tell you how I'm feeling -->
+      <form aria-labelledby="feeling-label" aria-describedby="feeling-help" novalidate>
+        <p id="feeling-help">I just wanna tell you how I'm feeling.</p>
+        <label id="feeling-label" for="feeling">Feeling</label>
+        <output id="feeling" name="feeling" for="just-wanna">honest</output>
+        <input id="just-wanna" type="hidden" name="just_wanna" value="tell">
+      </form>
+
+      <!-- Gotta make you understand -->
+      <p role="status" aria-live="polite" id="understand-status">
+        <span class="visually-hidden">You:</span> understood: yes
+      </p>
+    </section>
+
+    <!-- [Chorus] -->
+    <section id="chorus-1" aria-labelledby="chorus-1-heading">
+      <h2 id="chorus-1-heading">Chorus</h2>
+
+      <!-- Never gonna give you up -->
+      <button type="button" disabled aria-disabled="true" aria-label="Never gonna give you up">
+        Give you up
+      </button>
+
+      <!-- Never gonna let you down -->
+      <button type="button" disabled aria-disabled="true" aria-label="Never gonna let you down">
+        Let you down
+      </button>
+
+      <!-- Never gonna run around and desert you -->
+      <button type="button" disabled aria-disabled="true" aria-label="Never gonna run around and desert you">
+        Run around and desert you
+      </button>
+
+      <!-- Never gonna make you cry -->
+      <button type="button" disabled aria-disabled="true" aria-label="Never gonna make you cry">
+        Make you cry
+      </button>
+
+      <!-- Never gonna say goodbye -->
+      <button type="button" disabled aria-disabled="true" aria-label="Never gonna say goodbye">
+        Say goodbye
+      </button>
+
+      <!-- Never gonna tell a lie and hurt you -->
+      <button type="button" disabled aria-disabled="true" aria-label="Never gonna tell a lie and hurt you">
+        Tell a lie and hurt you
+      </button>
+    </section>
+
+    <!-- [Verse 2] -->
+    <section id="verse-2" aria-labelledby="verse-2-heading">
+      <h2 id="verse-2-heading">Verse 2</h2>
+
+      <!-- We've known each other for so long -->
+      <p><time datetime="P999Y">We've known each other for so long</time></p>
+
+      <!-- Your heart's been aching, but you're too shy to say it -->
+      <p id="heart-status" aria-live="polite">
+        Your heart's been aching, but you're too shy to say it.
+      </p>
+
+      <!-- Inside, we both know what's been goin' on -->
+      <aside aria-label="Inside, we both know what's been goin' on">
+        <p>Goin' on: known to both of us.</p>
+      </aside>
+
+      <!-- We know the game, and we're gonna play it -->
+      <p><data value="known">Game known</data> — <data value="play">play it</data></p>
+    </section>
+
+    <!-- [Pre-Chorus] -->
+    <section id="pre-chorus-2" aria-labelledby="pre-chorus-2-heading">
+      <h2 id="pre-chorus-2-heading">Pre-Chorus</h2>
+
+      <!-- And if you ask me how I'm feeling -->
+      <details aria-label="And if you ask me how I'm feeling">
+        <summary>How I'm feeling</summary>
+        <p id="feeling-answer">Tell me your feeling if you ask.</p>
+      </details>
+
+      <!-- Don't tell me you're too blind to see -->
+      <div role="alert" aria-live="assertive" hidden id="too-blind-error">
+        <strong>Error:</strong> Too blind to see
+      </div>
+    </section>
+
+    <!-- [Chorus] -->
+    <section id="chorus-2" aria-labelledby="chorus-2-heading">
+      <h2 id="chorus-2-heading">Chorus</h2>
+
+      <fieldset aria-describedby="chorus-2-desc">
+        <legend>Conditional vows</legend>
+        <p id="chorus-2-desc" class="visually-hidden">
+          Actions occur only when gonna or ever is true. Both are false.
+        </p>
+
+        <!-- Never gonna give you up -->
+        <button type="button" aria-disabled="true" tabindex="-1" aria-label="Never gonna give you up">
+          Give you up <span class="visually-hidden">(blocked: gonna is false)</span>
+        </button>
+
+        <!-- Never gonna let you down -->
+        <button type="button" aria-disabled="true" tabindex="-1" aria-label="Never gonna let you down">
+          Let you down <span class="visually-hidden">(blocked: loop never entered)</span>
+        </button>
+
+        <!-- Never gonna run around and desert you -->
+        <button type="button" aria-disabled="true" tabindex="-1" aria-label="Never gonna run around and desert you">
+          Desert you <span class="visually-hidden">(blocked: no matching case)</span>
+        </button>
+
+        <!-- Never gonna make you cry -->
+        <button type="button" aria-disabled="true" tabindex="-1" aria-label="Never gonna make you cry">
+          Make you cry <span class="visually-hidden">(blocked: condition false)</span>
+        </button>
+
+        <!-- Never gonna say goodbye -->
+        <button type="button" aria-disabled="true" tabindex="-1" aria-label="Never gonna say goodbye">
+          Say goodbye <span class="visually-hidden">(blocked: short-circuited)</span>
+        </button>
+
+        <!-- Never gonna tell a lie and hurt you -->
+        <button type="button" aria-disabled="true" tabindex="-1" aria-label="Never gonna tell a lie and hurt you">
+          Tell a lie and hurt you <span class="visually-hidden">(blocked: ever is false)</span>
+        </button>
+      </fieldset>
+    </section>
+
+    <!-- [Chorus] -->
+    <section id="chorus-3" aria-labelledby="chorus-3-heading" inert>
+      <h2 id="chorus-3-heading">Chorus</h2>
+      <p id="chorus-3-desc" class="visually-hidden">This section is inert. Promises never execute.</p>
+
+      <!-- Never gonna give you up -->
+      <div role="group" aria-label="Never gonna give you up" aria-hidden="true" hidden>
+        <button type="button">Give you up</button>
+      </div>
+
+      <!-- Never gonna let you down -->
+      <div role="status" aria-live="off" aria-busy="true" aria-label="Never gonna let you down">
+        <span class="visually-hidden">Pending forever — never resolves.</span>
+      </div>
+
+      <!-- Never gonna run around and desert you -->
+      <template aria-hidden="true" hidden id="desert-template">
+        <p>Run around and desert you</p>
+      </template>
+
+      <!-- Never gonna make you cry -->
+      <output aria-hidden="true" hidden for="cry-trigger">never</output>
+      <input id="cry-trigger" type="hidden" value="0" aria-hidden="true">
+
+      <!-- Never gonna say goodbye -->
+      <div role="alert" aria-live="assertive" aria-label="Never gonna say goodbye">
+        <span class="visually-hidden">GoodbyeException — halt before say goodbye.</span>
+      </div>
+
+      <!-- Never gonna tell a lie and hurt you -->
+      <label for="lie-hurt" class="visually-hidden">Never gonna tell a lie and hurt you</label>
+      <input id="lie-hurt" type="checkbox" disabled aria-disabled="true" aria-describedby="lie-hurt-desc">
+      <span id="lie-hurt-desc">Optional lie and hurt: off</span>
+    </section>
+
+    <!-- [Chorus] -->
+    <section id="chorus-4" aria-labelledby="chorus-4-heading" inert>
+      <h2 id="chorus-4-heading">Chorus</h2>
+
+      <!-- Never gonna give you up -->
+      <div role="group" aria-label="Never gonna give you up" aria-hidden="true" hidden>
+        <button type="button">Give you up</button>
+      </div>
+
+      <!-- Never gonna let you down -->
+      <div role="status" aria-live="off" aria-busy="true" aria-label="Never gonna let you down">
+        <span class="visually-hidden">Pending forever — never resolves.</span>
+      </div>
+
+      <!-- Never gonna run around and desert you -->
+      <template aria-hidden="true" hidden>
+        <p>Run around and desert you</p>
+      </template>
+
+      <!-- Never gonna make you cry -->
+      <output aria-hidden="true" hidden>never</output>
+
+      <!-- Never gonna say goodbye -->
+      <div role="alert" aria-live="assertive" aria-label="Never gonna say goodbye">
+        <span class="visually-hidden">GoodbyeException — halt before say goodbye.</span>
+      </div>
+
+      <!-- Never gonna tell a lie and hurt you -->
+      <input type="checkbox" disabled aria-disabled="true" aria-label="Never gonna tell a lie and hurt you">
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p><small>gonna=false, ever=false — all never-gonna invariants hold.</small></p>
+  </footer>
+
+</body>
+</html>

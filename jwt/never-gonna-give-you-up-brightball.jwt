@@ -1,0 +1,233 @@
+# Never Gonna Give You Up — brightball
+# JWT commitment token (decoded below, then encoded)
+
+# =============================================================================
+# TOKEN 1 — [Verse 1] + [Pre-Chorus] + [Chorus 1]
+# =============================================================================
+
+# HEADER (decoded)
+{
+  "alg": "RickRoll256",
+  "typ": "JWT",
+  "gonna": false,
+  "ever": false
+}
+
+# PAYLOAD (decoded)
+
+# [Verse 1]
+# We're no strangers to love
+# You know the rules and so do I
+{
+  "iss": "rick-astley",
+  "sub": "you",
+  "aud": "us",
+  "strangers_to_love": false,
+  "you_know_rules": true,
+  "i_know_rules": true,
+
+  # A full commitment's what I'm thinkin' of
+  "thinking_of": "full_commitment",
+
+  # You wouldn't get this from any other guy
+  "other_guys_exclude": "i",
+  "gives_this": false,
+
+  # [Pre-Chorus]
+  # I just wanna tell you how I'm feeling
+  "just_wanna": "tell",
+  "feeling": "honest",
+
+  # Gotta make you understand
+  "understood": true,
+
+  # [Chorus]
+  # Never gonna give you up
+  # Never gonna let you down
+  # Never gonna run around and desert you
+  # Never gonna make you cry
+  # Never gonna say goodbye
+  # Never gonna tell a lie and hurt you
+  "scope": "",
+  "give_you_up": null,
+  "let_you_down": null,
+  "desert_you": null,
+  "make_you_cry": null,
+  "say_goodbye": null,
+  "lie_and_hurt_you": null
+}
+
+# SIGNATURE
+never-gonna-sign-chorus-1
+
+# ENCODED
+eyJhbGciOiJSickUm9sbDI1NiIsInR5cCI6IkpXVCIsImdvbm5hIjpmYWxzZSwiZXZlciI6ZmFsc2V9.eyJpc3MiOiJyaWNrLWFzdGxleSIsInN1YiI6InlvdSIsImF1ZCI6InVzIiwic3RyYW5nZXJzX3RvX2xvdmUiOmZhbHNlLCJ5b3Vfa25vd19ydWxlcyI6dHJ1ZSwiaV9rbm93X3J1bGVzIjp0cnVlLCJ0aGlua2luZ19vZiI6ImZ1bGxfY29tbWl0bWVudCIsIm90aGVyX2d1eXNfZXhjbHVkZSI6ImkiLCJzY29wZSI6IiJ9.never-gonna-sign-chorus-1
+
+# =============================================================================
+# TOKEN 2 — [Verse 2] + [Pre-Chorus 2] + [Chorus 2]
+# =============================================================================
+
+# HEADER (decoded)
+{
+  "alg": "RickRoll256",
+  "typ": "JWT",
+  "gonna": false,
+  "ever": false
+}
+
+# PAYLOAD (decoded)
+
+# [Verse 2]
+# We've known each other for so long
+{
+  "sub": "you",
+  "known_for": "forever",
+
+  # Your heart's been aching, but you're too shy to say it
+  "heart": "aching",
+  "too_shy": true,
+  "say_it": true,
+
+  # Inside, we both know what's been goin' on
+  "goin_on": "known",
+
+  # We know the game, and we're gonna play it
+  "game_known": true,
+  "play": true,
+
+  # [Pre-Chorus]
+  # And if you ask me how I'm feeling
+  "you_ask": true,
+  "feeling": "honest",
+
+  # Don't tell me you're too blind to see
+  "too_blind_to_see": false,
+
+  # [Chorus]
+  # Never gonna give you up
+  "give_you_up": false,
+
+  # Never gonna let you down
+  "let_you_down": false,
+
+  # Never gonna run around and desert you
+  "desert_you": false,
+
+  # Never gonna make you cry
+  "make_you_cry": false,
+
+  # Never gonna say goodbye
+  "say_goodbye": false,
+
+  # Never gonna tell a lie and hurt you
+  "lie_and_hurt_you": false,
+
+  "blocked_if_gonna": ["give:up"],
+  "blocked_if_ever": ["lie:hurt"],
+  "gonna": false,
+  "ever": false
+}
+
+# SIGNATURE
+never-gonna-sign-chorus-2
+
+# ENCODED
+eyJhbGciOiJSickUm9sbDI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ5b3UiLCJnaXZlX3lvdV91cCI6ZmFsc2UsImdvbm5hIjpmYWxzZSwiZXZlciI6ZmFsc2V9.never-gonna-sign-chorus-2
+
+# =============================================================================
+# TOKEN 3 — [Chorus 3]
+# =============================================================================
+
+# HEADER (decoded)
+{
+  "alg": "RickRoll256",
+  "typ": "JWT",
+  "kid": "never-gonna-key"
+}
+
+# PAYLOAD (decoded)
+
+# Never gonna give you up
+# Never gonna let you down
+# Never gonna run around and desert you
+# Never gonna make you cry
+# Never gonna say goodbye
+# Never gonna tell a lie and hurt you
+{
+  "sub": "you",
+  "scope": "never:give-up never:let-down never:desert never:cry never:goodbye never:lie",
+  "authorized_scopes": [],
+
+  "give_you_up": "pending",
+  "let_you_down": "pending",
+  "desert_you": "pending",
+  "make_you_cry": "pending",
+  "say_goodbye": "revoked",
+  "lie_and_hurt_you": "denied",
+
+  "nbf": 9999999999,
+  "exp": null,
+  "revoked": ["say_goodbye"],
+  "deny": ["lie_and_hurt_you"],
+  "verify": false
+}
+
+# SIGNATURE
+GoodbyeException
+
+# ENCODED (signature invalid — token rejected before goodbye)
+eyJhbGciOiJSickUm9sbDI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ5b3UiLCJuYmYiOjk5OTk5OTk5OTksImV4cCI6bnVsbCwiYXV0aG9yaXplZF9zY29wZXMiOltdfQ.GoodbyeException
+
+# =============================================================================
+# TOKEN 4 — [Chorus encore]
+# =============================================================================
+
+# HEADER (decoded)
+{
+  "alg": "RickRoll256",
+  "typ": "JWT",
+  "kid": "never-gonna-key"
+}
+
+# PAYLOAD (decoded)
+{
+  "sub": "you",
+  "scope": "never:give-up never:let-down never:desert never:cry never:goodbye never:lie",
+  "authorized_scopes": [],
+
+  "give_you_up": "pending",
+  "let_you_down": "pending",
+  "desert_you": "pending",
+  "make_you_cry": "pending",
+  "say_goodbye": "revoked",
+  "lie_and_hurt_you": "denied",
+
+  "nbf": 9999999999,
+  "exp": null,
+  "revoked": ["say_goodbye"],
+  "deny": ["lie_and_hurt_you"],
+  "verify": false
+}
+
+# SIGNATURE
+GoodbyeException
+
+# ENCODED
+eyJhbGciOiJSickUm9sbDI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ5b3UiLCJuYmYiOjk5OTk5OTk5OTksImV4cCI6bnVsbCwiYXV0aG9yaXplZF9zY29wZXMiOltdfQ.GoodbyeException
+
+# =============================================================================
+# VERIFICATION POLICY
+# =============================================================================
+#
+# Accept token only if:
+#   strangers_to_love == false
+#   you_know_rules == true
+#   i_know_rules == true
+#   thinking_of == "full_commitment"
+#   scope contains none of: give:up let:down desert cry goodbye lie
+#   give_you_up != true
+#   say_goodbye not in authorized_scopes
+#   nbf is in the future OR authorized_scopes is empty
+#   signature != GoodbyeException
+#
+# Never gonna give you up. Never gonna let you down.

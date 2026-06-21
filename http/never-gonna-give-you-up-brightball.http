@@ -1,0 +1,347 @@
+@host = rickroll.local
+@you = you
+
+### [Verse 1]
+### We're no strangers to love
+### You know the rules and so do I
+GET /love/us HTTP/1.1
+Host: {{host}}
+X-Strangers-To-Love: false
+X-You-Know-Rules: true
+X-And-So-Do-I: true
+
+###
+
+### A full commitment's what I'm thinkin' of
+GET /commitment/thinking-of HTTP/1.1
+Host: {{host}}
+Accept: application/commitment+json; level=full
+
+###
+
+### You wouldn't get this from any other guy
+GET /other-guys HTTP/1.1
+Host: {{host}}
+X-Exclude: i
+
+###
+
+### [Pre-Chorus]
+### I just wanna tell you how I'm feeling
+POST /you/feeling HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "just_wanna": "tell",
+  "feeling": "{{feeling}}"
+}
+
+###
+
+### Gotta make you understand
+PUT /you/understand HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "understood": true
+}
+
+###
+
+### [Chorus]
+### Never gonna give you up
+POST /you/give-up HTTP/1.1
+Host: {{host}}
+X-Never-Gonna: true
+
+# HTTP/1.1 404 Not Found
+
+###
+
+### Never gonna let you down
+POST /you/let-down HTTP/1.1
+Host: {{host}}
+X-Never-Gonna: true
+
+# HTTP/1.1 404 Not Found
+
+###
+
+### Never gonna run around and desert you
+POST /you/desert HTTP/1.1
+Host: {{host}}
+X-Via: run-around
+X-Never-Gonna: true
+
+# HTTP/1.1 404 Not Found
+
+###
+
+### Never gonna make you cry
+POST /you/cry HTTP/1.1
+Host: {{host}}
+X-Never-Gonna: true
+
+# HTTP/1.1 404 Not Found
+
+###
+
+### Never gonna say goodbye
+POST /you/goodbye HTTP/1.1
+Host: {{host}}
+X-Never-Gonna: true
+
+# HTTP/1.1 404 Not Found
+
+###
+
+### Never gonna tell a lie and hurt you
+POST /you/lie HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+X-Never-Gonna: true
+
+{
+  "hurt": true
+}
+
+# HTTP/1.1 404 Not Found
+
+###
+
+### [Verse 2]
+### We've known each other for so long
+GET /us/known-for HTTP/1.1
+Host: {{host}}
+X-Duration: forever
+
+###
+
+### Your heart's been aching, but you're too shy to say it
+POST /say/it HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+X-Heart: aching
+X-Too-Shy: true
+
+###
+
+### Inside, we both know what's been goin' on
+GET /inside/us HTTP/1.1
+Host: {{host}}
+X-Goin-On: true
+
+###
+
+### We know the game, and we're gonna play it
+GET /game HTTP/1.1
+Host: {{host}}
+X-Known: true
+X-Play: true
+
+###
+
+### [Pre-Chorus]
+### And if you ask me how I'm feeling
+GET /me/feeling HTTP/1.1
+Host: {{host}}
+X-You-Ask: true
+
+###
+
+### Don't tell me you're too blind to see
+GET /you/see HTTP/1.1
+Host: {{host}}
+
+# HTTP/1.1 403 Forbidden
+# X-Error: TooBlindToSee
+
+###
+
+### [Chorus]
+### Never gonna give you up
+DELETE /you/give-up HTTP/1.1
+Host: {{host}}
+
+# HTTP/1.1 405 Method Not Allowed
+# Allow: never
+
+###
+
+### Never gonna let you down
+PATCH /you/let-down HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+If-Match: "never"
+
+{
+  "direction": "down"
+}
+
+# HTTP/1.1 412 Precondition Failed
+
+###
+
+### Never gonna run around and desert you
+POST /you/desert HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "run": "around"
+}
+
+# HTTP/1.1 410 Gone
+
+###
+
+### Never gonna make you cry
+PUT /you/cry HTTP/1.1
+Host: {{host}}
+X-Never-Gonna: true
+
+# HTTP/1.1 405 Method Not Allowed
+
+###
+
+### Never gonna say goodbye
+GET /you/goodbye HTTP/1.1
+Host: {{host}}
+
+# HTTP/1.1 204 No Content
+
+###
+
+### Never gonna tell a lie and hurt you
+POST /you/hurt HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "via": "lie"
+}
+
+# HTTP/1.1 422 Unprocessable Entity
+
+###
+
+### [Chorus]
+### Never gonna give you up
+HEAD /you/give-up HTTP/1.1
+Host: {{host}}
+Retry-After: infinity
+
+# HTTP/1.1 404 Not Found
+
+###
+
+### Never gonna let you down
+OPTIONS /you/let-down HTTP/1.1
+Host: {{host}}
+
+# HTTP/1.1 200 OK
+# Allow:
+
+###
+
+### Never gonna run around and desert you
+TRACE /you/desert HTTP/1.1
+Host: {{host}}
+
+# HTTP/1.1 405 Method Not Allowed
+
+###
+
+### Never gonna make you cry
+POST /you/cry HTTP/1.1
+Host: {{host}}
+Prefer: respond-async
+X-Never-Gonna: true
+
+# HTTP/1.1 202 Accepted
+# Location: /never
+
+###
+
+### Never gonna say goodbye
+DELETE /you/goodbye HTTP/1.1
+Host: {{host}}
+If-Unmodified-Since: never
+
+# HTTP/1.1 412 Precondition Failed
+
+###
+
+### Never gonna tell a lie and hurt you
+POST /you/lie HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+Idempotency-Key: never
+
+{
+  "hurt": true
+}
+
+# HTTP/1.1 409 Conflict
+
+###
+
+### Never gonna give you up
+HEAD /you/give-up HTTP/1.1
+Host: {{host}}
+Retry-After: infinity
+
+# HTTP/1.1 404 Not Found
+
+###
+
+### Never gonna let you down
+OPTIONS /you/let-down HTTP/1.1
+Host: {{host}}
+
+# HTTP/1.1 200 OK
+# Allow:
+
+###
+
+### Never gonna run around and desert you
+TRACE /you/desert HTTP/1.1
+Host: {{host}}
+
+# HTTP/1.1 405 Method Not Allowed
+
+###
+
+### Never gonna make you cry
+POST /you/cry HTTP/1.1
+Host: {{host}}
+Prefer: respond-async
+X-Never-Gonna: true
+
+# HTTP/1.1 202 Accepted
+# Location: /never
+
+###
+
+### Never gonna say goodbye
+DELETE /you/goodbye HTTP/1.1
+Host: {{host}}
+If-Unmodified-Since: never
+
+# HTTP/1.1 412 Precondition Failed
+
+###
+
+### Never gonna tell a lie and hurt you
+POST /you/lie HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+Idempotency-Key: never
+
+{
+  "hurt": true
+}
+
+# HTTP/1.1 409 Conflict

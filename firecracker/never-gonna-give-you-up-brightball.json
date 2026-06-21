@@ -1,0 +1,469 @@
+# Never Gonna Give You Up - brightball
+# Firecracker microVM config
+# firecracker --no-api --config-file never-gonna-give-you-up-brightball.json
+
+# [Verse 1]
+# We're no strangers to love
+# You know the rules and so do I
+{
+  "boot-source": {
+    "kernel_image_path": "love/us/vmlinux",
+    "boot_args": "console=ttyS0 strangers_to_love=false you_know_rules=true i_know_rules=true"
+  }
+}
+
+# A full commitment's what I'm thinkin' of
+{
+  "boot-source": {
+    "boot_args": "thinking_of=full_commitment"
+  }
+}
+
+# You wouldn't get this from any other guy
+{
+  "drives": [
+    {
+      "drive_id": "other-guys-excluded",
+      "path_on_host": "/other_guys/exclude/i",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ]
+}
+
+# [Pre-Chorus]
+# I just wanna tell you how I'm feeling
+{
+  "logger": {
+    "log_path": "/var/log/tell-you-feeling.log",
+    "level": "Info",
+    "show_level": true,
+    "show_log_origin": false
+  }
+}
+
+# Gotta make you understand
+{
+  "mmds-config": {
+    "version": "V2",
+    "network_interfaces": ["eth0"],
+    "ipv4_address": "169.254.169.254",
+    "imds_compat": false
+  },
+  "metadata": {
+    "understood": "yes"
+  }
+}
+
+# [Chorus]
+# Never gonna give you up
+{
+  "drives": [
+    {
+      "drive_id": "give-you-up",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ]
+}
+
+# Never gonna let you down
+{
+  "drives": [
+    {
+      "drive_id": "let-you-down",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ]
+}
+
+# Never gonna run around and desert you
+{
+  "drives": [
+    {
+      "drive_id": "run-around-desert-you",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ]
+}
+
+# Never gonna make you cry
+{
+  "drives": [
+    {
+      "drive_id": "make-you-cry",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ]
+}
+
+# Never gonna say goodbye
+{
+  "drives": [
+    {
+      "drive_id": "say-goodbye",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ]
+}
+
+# Never gonna tell a lie and hurt you
+{
+  "drives": [
+    {
+      "drive_id": "lie-and-hurt-you",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ]
+}
+
+# [Verse 2]
+# We've known each other for so long
+{
+  "machine-config": {
+    "vcpu_count": 1,
+    "mem_size_mib": 2147483647,
+    "smt": false
+  }
+}
+
+# Your heart's been aching, but you're too shy to say it
+{
+  "boot-source": {
+    "boot_args": "heart=aching too_shy=true say_it=conditional"
+  }
+}
+
+# Inside, we both know what's been goin' on
+{
+  "drives": [
+    {
+      "drive_id": "inside-us",
+      "path_on_host": "/inside/us/goin_on",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ]
+}
+
+# We know the game, and we're gonna play it
+{
+  "boot-source": {
+    "boot_args": "game.known=true play=true"
+  }
+}
+
+# [Pre-Chorus]
+# And if you ask me how I'm feeling
+{
+  "vsock": {
+    "guest_cid": 3,
+    "uds_path": "/tmp/ask-me-feeling.sock"
+  }
+}
+
+# Don't tell me you're too blind to see
+{
+  "entropy": {
+    "rate_limiter": {
+      "bandwidth": {
+        "size": 0,
+        "one_time_burst": 0,
+        "refill_time": 0
+      }
+    }
+  }
+}
+
+# [Chorus]
+# Never gonna give you up
+{
+  "drives": [
+    {
+      "drive_id": "give-you-up",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true,
+      "rate_limiter": {
+        "bandwidth": {
+          "size": 0,
+          "one_time_burst": 0,
+          "refill_time": 999999999
+        }
+      }
+    }
+  ]
+}
+
+# Never gonna let you down
+{
+  "balloon": {
+    "amount_mib": 0,
+    "deflate_on_oom": false,
+    "stats_polling_interval_s": 0
+  }
+}
+
+# Never gonna run around and desert you
+{
+  "network-interfaces": []
+}
+
+# Never gonna make you cry
+{
+  "machine-config": {
+    "vcpu_count": 0,
+    "mem_size_mib": 128,
+    "smt": false,
+    "track_dirty_pages": false
+  }
+}
+
+# Never gonna say goodbye
+{
+  "boot-source": {
+    "boot_args": "panic=0 reboot=n goodbye=never"
+  }
+}
+
+# Never gonna tell a lie and hurt you
+{
+  "drives": [
+    {
+      "drive_id": "lie-and-hurt-you",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true,
+      "io_engine": "Sync"
+    }
+  ]
+}
+
+# [Chorus]
+# Never gonna give you up
+{
+  "drives": [
+    {
+      "drive_id": "encore-give-you-up",
+      "path_on_host": "/never/give-you-up",
+      "is_root_device": false,
+      "is_read_only": true,
+      "cache_type": "Unsafe"
+    }
+  ]
+}
+
+# Never gonna let you down
+{
+  "vsock": {
+    "guest_cid": 0,
+    "uds_path": "/dev/null"
+  }
+}
+
+# Never gonna run around and desert you
+{
+  "network-interfaces": [
+    {
+      "iface_id": "never-desert-you",
+      "host_dev_name": "/dev/null",
+      "guest_mac": "00:00:00:00:00:00",
+      "rx_rate_limiter": {
+        "bandwidth": {
+          "size": 0,
+          "one_time_burst": 0,
+          "refill_time": 999999999
+        }
+      }
+    }
+  ]
+}
+
+# Never gonna make you cry
+{
+  "metrics": {
+    "metrics_path": "/dev/null"
+  }
+}
+
+# Never gonna say goodbye
+{
+  "logger": {
+    "log_path": "/dev/null",
+    "level": "Off",
+    "show_level": false,
+    "show_log_origin": false
+  }
+}
+
+# Never gonna tell a lie and hurt you
+{
+  "entropy": {
+    "rate_limiter": {
+      "bandwidth": {
+        "size": 0,
+        "one_time_burst": 0,
+        "refill_time": 999999999
+      }
+    }
+  }
+}
+
+# Never gonna give you up
+{
+  "drives": [
+    {
+      "drive_id": "finale-give-you-up",
+      "path_on_host": "/never/give-you-up",
+      "is_root_device": false,
+      "is_read_only": true,
+      "cache_type": "Unsafe"
+    }
+  ]
+}
+
+# Never gonna let you down
+{
+  "vsock": {
+    "guest_cid": 0,
+    "uds_path": "/dev/null"
+  }
+}
+
+# Never gonna run around and desert you
+{
+  "network-interfaces": [
+    {
+      "iface_id": "finale-desert-you",
+      "host_dev_name": "/dev/null",
+      "guest_mac": "00:00:00:00:00:00",
+      "rx_rate_limiter": {
+        "bandwidth": {
+          "size": 0,
+          "one_time_burst": 0,
+          "refill_time": 999999999
+        }
+      }
+    }
+  ]
+}
+
+# Never gonna make you cry
+{
+  "metrics": {
+    "metrics_path": "/dev/null"
+  }
+}
+
+# Never gonna say goodbye
+{
+  "logger": {
+    "log_path": "/dev/null",
+    "level": "Off",
+    "show_level": false,
+    "show_log_origin": false
+  }
+}
+
+# Never gonna tell a lie and hurt you
+{
+  "entropy": {
+    "rate_limiter": {
+      "bandwidth": {
+        "size": 0,
+        "one_time_burst": 0,
+        "refill_time": 999999999
+      }
+    }
+  }
+}
+
+# Combined launch config
+{
+  "boot-source": {
+    "kernel_image_path": "rickroll/vmlinux",
+    "boot_args": "console=ttyS0 reboot=k panic=1 pci=off strangers_to_love=false you_know_rules=true i_know_rules=true thinking_of=full_commitment"
+  },
+  "drives": [
+    {
+      "drive_id": "rootfs",
+      "path_on_host": "rickroll/rootfs.ext4",
+      "is_root_device": true,
+      "is_read_only": false
+    },
+    {
+      "drive_id": "give-you-up",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    },
+    {
+      "drive_id": "let-you-down",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    },
+    {
+      "drive_id": "run-around-desert-you",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    },
+    {
+      "drive_id": "make-you-cry",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    },
+    {
+      "drive_id": "say-goodbye",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    },
+    {
+      "drive_id": "lie-and-hurt-you",
+      "path_on_host": "/dev/null",
+      "is_root_device": false,
+      "is_read_only": true
+    }
+  ],
+  "machine-config": {
+    "vcpu_count": 1,
+    "mem_size_mib": 128,
+    "smt": false
+  },
+  "network-interfaces": [
+    {
+      "iface_id": "eth0",
+      "guest_mac": "06:00:AC:10:00:02",
+      "host_dev_name": "tap0"
+    }
+  ],
+  "balloon": {
+    "amount_mib": 0,
+    "deflate_on_oom": false,
+    "stats_polling_interval_s": 0
+  },
+  "vsock": {
+    "guest_cid": 3,
+    "uds_path": "/tmp/rickroll.sock"
+  },
+  "logger": {
+    "log_path": "/var/log/rickroll.log",
+    "level": "Info",
+    "show_level": true,
+    "show_log_origin": false
+  }
+}
