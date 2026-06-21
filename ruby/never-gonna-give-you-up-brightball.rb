@@ -1,7 +1,7 @@
 # [Verse 1]
 # We're no strangers to love
 # You know the rules and so do I
-you.know?(rules) && self.know?(rules) unless love.strangers?
+you.know?(rules) && self.know?(rules) unless love.strangers?(self, you)
 
 # A full commitment's what I'm thinkin' of
 self.commitment.fill!()
@@ -27,6 +27,6 @@ while false do |you|
     self.let(you,:down)
     self.run(you,:around).desert!(you)
     self.make(you,:cry)
-    self.say(you, :goodbye)
+    self.say(you,:goodbye)
     self.tell(you, :lie).hurt!(you)    
 end
