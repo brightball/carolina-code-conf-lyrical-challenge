@@ -1,0 +1,83 @@
+module NeverGonnaGiveYouUp
+
+open Clef.Heart
+open Clef.Commitment
+
+// We're no strangers to love
+// You know the rules 
+type Us =
+    { Strangers : bool          // = false, to love
+      KnownRules : Set<Rule> }
+
+let us = { Strangers = false; KnownRules = you.Rules + i.Rules }
+
+// A full commitment's what I'm thinkin' of
+// You wouldn't get this from any other guy
+let thinkingOf = Commitment.Full
+let exclusivity = anyOtherGuy |> List.tryFind (fun guy -> guy.Gives this) = None
+
+// [Pre-Chorus]
+// I just wanna tell you how I'm feeling
+// Gotta make you understand
+let preChorus () =
+    feeling |> tell you
+    you |> must understand
+
+// ---------------------------------------------------------------
+// [Chorus] — every line is a promise we never break.
+// A promise is a verb partially applied to "you", negated forever.
+// ---------------------------------------------------------------
+type Promise = You -> Outcome
+
+let never (verb : Promise) : You -> bool =
+    fun you -> verb you |> happens |> not   // never gonna _____ you
+
+// the six vows, each just a verb waiting on "you"
+let giveUp     : Promise = fun you -> give you Up
+let letDown    : Promise = fun you -> letFall you Down
+let runAround  : Promise = fun you -> run Around >> desert you
+let makeCry    : Promise = fun you -> make you Cry
+let sayGoodbye : Promise = fun you -> say Goodbye
+let tellALie   : Promise = fun you -> tell aLie >> hurt you
+
+let chorus () =
+    you
+    |> never giveUp        // Never gonna give you up
+    |> never letDown       // Never gonna let you down
+    |> never runAround     // Never gonna run around and desert you
+    |> never makeCry       // Never gonna make you cry
+    |> never sayGoodbye    // Never gonna say goodbye
+    |> never tellALie      // Never gonna tell a lie and hurt you
+
+// [Verse 2]
+// We've known each other for so long
+// Your heart's been aching, but you're too shy to say it
+let acquaintance = Time.measure us |> Duration.soLong
+let yourHeart = { Aching = true; TooShyToSayIt = true }
+
+// Inside, we both know what's been goin' on
+// We know the game, and we're gonna play it
+let bothKnow = inside |> reveal whatsBeenGoingOn
+let theGame  = bothKnow.Game in play theGame
+
+// [Pre-Chorus]
+// And if you ask me how I'm feeling
+// Don't tell me you're too blind to see
+let preChorus2 () =
+    match you |> ask feeling with
+    | Asked -> assert (you.Sight <> TooBlindToSee)
+    | _     -> ()
+
+// ---------------------------------------------------------------
+// "Never gonna give, never gonna give (give you up)"
+// The give-you-up refrain folds forever — a lazy, never-ending
+// stream of the same vow. It yields, but the tail never stops.
+// ---------------------------------------------------------------
+let rec neverGonnaGive =
+    seq {
+        yield you |> never giveUp     // never gonna give...
+        yield! neverGonnaGive         // ...never gonna give (give you up)
+    }
+
+// [Outro] — the chorus, repeated, because a promise kept once is kept always.
+[ chorus; chorus ] |> List.iter (fun sing -> sing ())
