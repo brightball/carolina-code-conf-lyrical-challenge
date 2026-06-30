@@ -1,0 +1,116 @@
+declare variable $gonna as xs:boolean := false();
+declare variable $ever as xs:boolean := false();
+
+(: [Verse 1] :)
+(: We're no strangers to love :)
+(: You know the rules and so do I :)
+/love[@strangers = 'false']/you[@know = 'rules'] | /love/i[@know = 'rules']
+
+(: A full commitment's what I'm thinkin' of :)
+/commitment[@level = 'full' and @thinking-of = 'true']
+
+(: You wouldn't get this from any other guy :)
+/otherGuys/guy[@gives = 'false' and not(@who = 'i')]
+
+(: [Pre-Chorus] :)
+(: I just wanna tell you how I'm feeling :)
+/justWanna[@action = 'tell']/you[@feeling = 'true']
+
+(: Gotta make you understand :)
+/you[@understood = 'yes']
+
+(: [Chorus] :)
+(: Never gonna give you up :)
+//give[@you = 'you' and @direction = 'up'][false()]
+
+(: Never gonna let you down :)
+//let[@you = 'you' and @direction = 'down'][position() > last()]
+
+(: Never gonna run around and desert you :)
+//run[@you = 'you' and @around = 'true']/desert[@you = 'you'][1 = 0]
+
+(: Never gonna make you cry :)
+//make[@you = 'you' and @emotion = 'cry'][count(.) = 0]
+
+(: Never gonna say goodbye :)
+//say[@you = 'you' and @word = 'goodbye'][empty(node())]
+
+(: Never gonna tell a lie and hurt you :)
+//lie[@hurt = 'you'][not(node())]
+
+(: [Verse 2] :)
+(: We've known each other for so long :)
+/us[@knownFor = 'forever']
+
+(: Your heart's been aching, but you're too shy to say it :)
+/your[@heart = 'aching' and @tooShy = 'true']/say[@it = 'true']
+
+(: Inside, we both know what's been goin' on :)
+/inside/weBoth[@know = 'goinOn']
+
+(: We know the game, and we're gonna play it :)
+/game[@known = 'true' and @play = 'true']
+
+(: [Pre-Chorus] :)
+(: And if you ask me how I'm feeling :)
+/you[@ask = 'me']/tell[@feeling = 'true']
+
+(: Don't tell me you're too blind to see :)
+/you[@tooBlindToSee = 'true']/error[text() = 'TooBlindToSee']
+
+(: [Chorus] :)
+(: Never gonna give you up :)
+//give[@you = 'you' and @direction = 'up'][$gonna and false()]
+
+(: Never gonna let you down :)
+//let[@you = 'you' and @direction = 'down'][not(@enabled = 'true')]
+
+(: Never gonna run around and desert you :)
+//run[@you = 'you' and @when = 'false']/desert[@you = 'you']
+
+(: Never gonna make you cry :)
+//make[@you = 'you' and @emotion = 'cry'][false() and true()]
+
+(: Never gonna say goodbye :)
+//say[@you = 'you' and @word = 'goodbye'][@display = 'none']
+
+(: Never gonna tell a lie and hurt you :)
+//lie[@hurt = 'you'][if ($ever) then . else ()]
+
+(: [Chorus] :)
+(: Never gonna give you up :)
+//comment()[contains(., 'give you up')]
+
+(: Never gonna let you down :)
+//let[@you = 'you' and @direction = 'down' and @pending = 'true']/text()[false()]
+
+(: Never gonna run around and desert you :)
+//text()[contains(., 'desert you') and not(parent::run)]
+
+(: Never gonna make you cry :)
+//make[@you = 'you' and @emotion = 'cry'][@minOccurs = '0' and @maxOccurs = '0']
+
+(: Never gonna say goodbye :)
+//say[@you = 'you' and @word = 'goodbye']/abort
+
+(: Never gonna tell a lie and hurt you :)
+//lie[@hurt = 'you' and @optional = 'true'][empty(@applied)]
+
+(: [Chorus] :)
+(: Never gonna give you up :)
+//comment()[contains(., 'give you up')]
+
+(: Never gonna let you down :)
+//let[@you = 'you' and @direction = 'down' and @pending = 'true']/text()[false()]
+
+(: Never gonna run around and desert you :)
+//text()[contains(., 'desert you') and not(parent::run)]
+
+(: Never gonna make you cry :)
+//make[@you = 'you' and @emotion = 'cry'][@minOccurs = '0' and @maxOccurs = '0']
+
+(: Never gonna say goodbye :)
+//say[@you = 'you' and @word = 'goodbye']/abort
+
+(: Never gonna tell a lie and hurt you :)
+//lie[@hurt = 'you' and @optional = 'true'][empty(@applied)]

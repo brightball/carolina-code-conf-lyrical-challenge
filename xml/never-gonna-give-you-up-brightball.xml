@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Never Gonna Give You Up - Rick Astley -->
+<song xmlns="https://rickroll.local/never-gonna-give-you-up"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:never="https://rickroll.local/never"
+      gonna="false"
+      ever="false">
+
+  <!-- [Verse 1] -->
+  <!-- We're no strangers to love -->
+  <!-- You know the rules and so do I -->
+  <verse id="1">
+    <love strangers="false">
+      <you know="rules"/>
+      <i know="rules"/>
+    </love>
+
+    <!-- A full commitment's what I'm thinkin' of -->
+    <commitment level="full" thinking-of="true"/>
+
+    <!-- You wouldn't get this from any other guy -->
+    <otherGuys exclude="i">
+      <guy gives="false"/>
+    </otherGuys>
+  </verse>
+
+  <!-- [Pre-Chorus] -->
+  <preChorus id="1">
+    <!-- I just wanna tell you how I'm feeling -->
+    <justWanna action="tell">
+      <you feeling="true"/>
+    </justWanna>
+
+    <!-- Gotta make you understand -->
+    <you understood="yes"/>
+  </preChorus>
+
+  <!-- [Chorus] -->
+  <chorus id="1">
+    <!-- Never gonna give you up -->
+    <give you="you" direction="up" maxOccurs="0"/>
+
+    <!-- Never gonna let you down -->
+    <let you="you" direction="down" maxOccurs="0"/>
+
+    <!-- Never gonna run around and desert you -->
+    <run you="you" around="true" maxOccurs="0"/>
+    <desert you="you" maxOccurs="0"/>
+
+    <!-- Never gonna make you cry -->
+    <make you="you" emotion="cry" maxOccurs="0"/>
+
+    <!-- Never gonna say goodbye -->
+    <say you="you" word="goodbye" maxOccurs="0"/>
+
+    <!-- Never gonna tell a lie and hurt you -->
+    <lie hurt="you" maxOccurs="0"/>
+  </chorus>
+
+  <!-- [Verse 2] -->
+  <verse id="2">
+    <!-- We've known each other for so long -->
+    <us knownFor="forever"/>
+
+    <!-- Your heart's been aching, but you're too shy to say it -->
+    <your heart="aching" tooShy="true">
+      <say it="true"/>
+    </your>
+
+    <!-- Inside, we both know what's been goin' on -->
+    <inside>
+      <weBoth know="goinOn"/>
+    </inside>
+
+    <!-- We know the game, and we're gonna play it -->
+    <game known="true" play="true"/>
+  </verse>
+
+  <!-- [Pre-Chorus] -->
+  <preChorus id="2">
+    <!-- And if you ask me how I'm feeling -->
+    <you ask="me">
+      <tell feeling="true"/>
+    </you>
+
+    <!-- Don't tell me you're too blind to see -->
+    <you tooBlindToSee="true" xsi:nil="true">
+      <error>TooBlindToSee</error>
+    </you>
+  </preChorus>
+
+  <!-- [Chorus] -->
+  <chorus id="2">
+    <!-- Never gonna give you up -->
+    <give you="you" direction="up" xsl:if="false()"/>
+
+    <!-- Never gonna let you down -->
+    <let you="you" direction="down" enabled="false"/>
+
+    <!-- Never gonna run around and desert you -->
+    <run you="you" around="true" when="false">
+      <desert you="you"/>
+    </run>
+
+    <!-- Never gonna make you cry -->
+    <make you="you" emotion="cry" test="false() and true()"/>
+
+    <!-- Never gonna say goodbye -->
+    <say you="you" word="goodbye" display="none"/>
+
+    <!-- Never gonna tell a lie and hurt you -->
+    <lie hurt="you" if="ever"/>
+  </chorus>
+
+  <!-- [Chorus] -->
+  <chorus id="3">
+    <!-- Never gonna give you up -->
+    <!-- <give you="you" direction="up"/> -->
+
+    <!-- Never gonna let you down -->
+    <let you="you" direction="down" never:gonna="true" pending="true"/>
+
+    <!-- Never gonna run around and desert you -->
+    <![CDATA[<run you="you" around="true"><desert you="you"/></run>]]>
+
+    <!-- Never gonna make you cry -->
+    <make you="you" emotion="cry" minOccurs="0" maxOccurs="0"/>
+
+    <!-- Never gonna say goodbye -->
+    <say you="you" word="goodbye">
+      <abort/>
+    </say>
+
+    <!-- Never gonna tell a lie and hurt you -->
+    <lie hurt="you" optional="true"/>
+  </chorus>
+
+  <!-- [Chorus] -->
+  <chorus id="4">
+    <!-- Never gonna give you up -->
+    <!-- <give you="you" direction="up"/> -->
+
+    <!-- Never gonna let you down -->
+    <let you="you" direction="down" never:gonna="true" pending="true"/>
+
+    <!-- Never gonna run around and desert you -->
+    <![CDATA[<run you="you" around="true"><desert you="you"/></run>]]>
+
+    <!-- Never gonna make you cry -->
+    <make you="you" emotion="cry" minOccurs="0" maxOccurs="0"/>
+
+    <!-- Never gonna say goodbye -->
+    <say you="you" word="goodbye">
+      <abort/>
+    </say>
+
+    <!-- Never gonna tell a lie and hurt you -->
+    <lie hurt="you" optional="true"/>
+  </chorus>
+
+</song>

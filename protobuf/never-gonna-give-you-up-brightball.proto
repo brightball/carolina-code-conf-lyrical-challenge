@@ -1,0 +1,285 @@
+syntax = "proto3";
+
+package brightball.never_gonna_give_you_up;
+
+// [Verse 1]
+message Verse1 {
+  // We're no strangers to love
+  // You know the rules and so do I
+  Love us_and_love = 1;
+
+  // A full commitment's what I'm thinkin' of
+  Commitment thinking_of = 2;
+
+  // You wouldn't get this from any other guy
+  repeated Guy other_guy = 3;
+}
+
+message Love {
+  bool strangers = 1;
+  Rules rules = 2;
+}
+
+message Rules {
+  bool you_know = 1;
+  bool i_know = 2;
+}
+
+enum Commitment {
+  COMMITMENT_UNSPECIFIED = 0;
+  FULL = 1;
+}
+
+message Guy {
+  string name = 1;
+  bool gives_this = 2;
+}
+
+// [Pre-Chorus]
+message PreChorus1 {
+  // I just wanna tell you how I'm feeling
+  TellYouFeeling tell_you_feeling = 1;
+
+  // Gotta make you understand
+  bool understand = 2;
+}
+
+message TellYouFeeling {
+  You you = 1;
+  Feeling feeling = 2;
+  bool just_wanna = 3;
+}
+
+message You {}
+message Feeling {}
+
+// [Chorus]
+message Chorus1 {
+  // Never gonna give you up
+  optional GiveYouUp give_you_up = 1;
+
+  // Never gonna let you down
+  optional LetYouDown let_you_down = 2;
+
+  // Never gonna run around and desert you
+  repeated DesertYou desert_you = 3;
+
+  // Never gonna make you cry
+  optional MakeYouCry make_you_cry = 4;
+
+  // Never gonna say goodbye
+  optional SayGoodbye say_goodbye = 5;
+
+  // Never gonna tell a lie and hurt you
+  optional LieAndHurtYou lie_and_hurt_you = 6;
+}
+
+message GiveYouUp {
+  You you = 1;
+  Direction up = 2;
+}
+
+message LetYouDown {
+  You you = 1;
+  Direction down = 2;
+}
+
+message DesertYou {
+  RunAround run_around = 1;
+  You you = 2;
+}
+
+message RunAround {
+  You you = 1;
+}
+
+message MakeYouCry {
+  You you = 1;
+}
+
+message SayGoodbye {
+  You you = 1;
+}
+
+message LieAndHurtYou {
+  Lie lie = 1;
+  You you = 2;
+}
+
+message Lie {
+  bool truth = 1;
+}
+
+enum Direction {
+  DIRECTION_UNSPECIFIED = 0;
+  UP = 1;
+  DOWN = 2;
+}
+
+// [Verse 2]
+message Verse2 {
+  // We've known each other for so long
+  KnownFor so_long = 1;
+
+  // Your heart's been aching, but you're too shy to say it
+  HeartAchingTooShy heart = 2;
+
+  // Inside, we both know what's been goin' on
+  Inside inside = 3;
+
+  // We know the game, and we're gonna play it
+  Game game = 4;
+}
+
+message KnownFor {
+  Us us = 1;
+  int64 duration = 2; // max
+}
+
+message Us {}
+
+message HeartAchingTooShy {
+  Heart heart = 1;
+  bool too_shy = 2;
+  It it = 3;
+}
+
+message Heart {
+  bool aching = 1;
+}
+
+message It {}
+
+message Inside {
+  Us us = 1;
+  GoinOn goin_on = 2;
+}
+
+enum GoinOn {
+  GOIN_ON_UNSPECIFIED = 0;
+  GOIN_ON = 1;
+}
+
+message Game {
+  bool known = 1;
+  bool play = 2;
+}
+
+// [Pre-Chorus]
+message PreChorus2 {
+  // And if you ask me how I'm feeling
+  AskFeeling ask_feeling = 1;
+
+  // Don't tell me you're too blind to see
+  TooBlindToSee too_blind_to_see = 2;
+}
+
+message AskFeeling {
+  You you = 1;
+  Me me = 2;
+  Feeling feeling = 3;
+}
+
+message Me {}
+
+message TooBlindToSee {
+  bool see = 1;
+}
+
+// [Chorus]
+message Chorus2 {
+  // Never gonna give you up
+  bool give_you_up = 1 [deprecated = true];
+
+  // Never gonna let you down
+  bool let_you_down = 2 [deprecated = true];
+
+  // Never gonna run around and desert you
+  bool desert_you = 3 [deprecated = true];
+
+  // Never gonna make you cry
+  bool make_you_cry = 4 [deprecated = true];
+
+  // Never gonna say goodbye
+  bool say_goodbye = 5 [deprecated = true];
+
+  // Never gonna tell a lie and hurt you
+  bool lie_and_hurt_you = 6 [deprecated = true];
+}
+
+// [Chorus]
+service NeverGonna {
+  // Never gonna give you up
+  rpc GiveYouUp(GiveYouUpRequest) returns (Never);
+
+  // Never gonna let you down
+  rpc LetYouDown(LetYouDownRequest) returns (Never);
+
+  // Never gonna run around and desert you
+  rpc RunAroundAndDesertYou(DesertYouRequest) returns (Never);
+
+  // Never gonna make you cry
+  rpc MakeYouCry(MakeYouCryRequest) returns (Never);
+
+  // Never gonna say goodbye
+  rpc SayGoodbye(SayGoodbyeRequest) returns (Never);
+
+  // Never gonna tell a lie and hurt you
+  rpc LieAndHurtYou(LieAndHurtYouRequest) returns (Never);
+}
+
+message Never {}
+
+message GiveYouUpRequest {
+  You you = 1;
+}
+
+message LetYouDownRequest {
+  You you = 1;
+}
+
+message DesertYouRequest {
+  You you = 1;
+}
+
+message MakeYouCryRequest {
+  You you = 1;
+}
+
+message SayGoodbyeRequest {
+  You you = 1;
+}
+
+message LieAndHurtYouRequest {
+  You you = 1;
+}
+
+// [Chorus]
+service NeverGonnaEncore {
+  // Never gonna give you up
+  rpc GiveYouUp(GiveYouUpRequest) returns (Never);
+
+  // Never gonna let you down
+  rpc LetYouDown(LetYouDownRequest) returns (Never);
+
+  // Never gonna run around and desert you
+  rpc RunAroundAndDesertYou(DesertYouRequest) returns (Never);
+
+  // Never gonna make you cry
+  rpc MakeYouCry(MakeYouCryRequest) returns (Never);
+
+  // Never gonna say goodbye
+  rpc SayGoodbye(SayGoodbyeRequest) returns (Never);
+
+  // Never gonna tell a lie and hurt you
+  rpc LieAndHurtYou(LieAndHurtYouRequest) returns (Never);
+}
+
+message RickRoll {
+  Verse1 verse_1 = 1;
+  PreChorus1 pre_chorus_1 = 2;
+  Chorus1 chorus_1 = 3;
+  Verse2 verse_2 = 4;
+  PreChorus2 pre_chorus_2 = 5;
+  Chorus2 chorus_2 = 6;
+}

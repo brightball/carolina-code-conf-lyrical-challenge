@@ -1,0 +1,566 @@
+# [Verse 1]
+# We're no strangers to love
+# You know the rules and so do I
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: us-and-love
+  namespace: rickroll
+data:
+  strangers_to_love: "false"
+  you_know_rules: "true"
+  i_know_rules: "true"
+---
+# A full commitment's what I'm thinkin' of
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: thinking-of
+  namespace: rickroll
+data:
+  commitment: full
+---
+# You wouldn't get this from any other guy
+apiVersion: v1
+kind: Secret
+metadata:
+  name: other-guys-excluded
+  namespace: rickroll
+stringData:
+  exclude: i
+---
+# [Pre-Chorus]
+# I just wanna tell you how I'm feeling
+apiVersion: v1
+kind: Event
+metadata:
+  name: tell-you-feeling
+  namespace: rickroll
+message: "I just wanna tell you how I'm feeling"
+reason: JustWanna
+type: Normal
+---
+# Gotta make you understand
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: you-understand
+  namespace: rickroll
+data:
+  understood: "yes"
+---
+# [Chorus]
+# Never gonna give you up
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: give-you-up
+  namespace: rickroll
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: give-you-up
+  template:
+    metadata:
+      labels:
+        app: give-you-up
+    spec:
+      containers:
+        - name: give
+          image: rickroll/give-you-up:latest
+          env:
+            - name: YOU
+              value: you
+            - name: DIRECTION
+              value: up
+---
+# Never gonna let you down
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: let-you-down
+  namespace: rickroll
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: let-you-down
+  template:
+    metadata:
+      labels:
+        app: let-you-down
+    spec:
+      containers:
+        - name: let
+          image: rickroll/let-you-down:latest
+          env:
+            - name: DIRECTION
+              value: down
+---
+# Never gonna run around and desert you
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: run-around-desert-you
+  namespace: rickroll
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: desert-you
+  template:
+    metadata:
+      labels:
+        app: desert-you
+    spec:
+      containers:
+        - name: desert
+          image: rickroll/desert-you:latest
+          args: ["run", "around"]
+---
+# Never gonna make you cry
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: make-you-cry
+  namespace: rickroll
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: make-you-cry
+  template:
+    metadata:
+      labels:
+        app: make-you-cry
+    spec:
+      containers:
+        - name: make
+          image: rickroll/make-you-cry:latest
+---
+# Never gonna say goodbye
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: say-goodbye
+  namespace: rickroll
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: say-goodbye
+  template:
+    metadata:
+      labels:
+        app: say-goodbye
+    spec:
+      containers:
+        - name: say
+          image: rickroll/say-goodbye:latest
+---
+# Never gonna tell a lie and hurt you
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lie-and-hurt-you
+  namespace: rickroll
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: lie-and-hurt-you
+  template:
+    metadata:
+      labels:
+        app: lie-and-hurt-you
+    spec:
+      containers:
+        - name: lie
+          image: rickroll/lie-and-hurt-you:latest
+---
+# [Verse 2]
+# We've known each other for so long
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: known-for-so-long
+  namespace: rickroll
+data:
+  duration: forever
+---
+# Your heart's been aching, but you're too shy to say it
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: say-it
+  namespace: rickroll
+spec:
+  suspend: true
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: say
+          image: rickroll/say-it:latest
+          env:
+            - name: HEART
+              value: aching
+            - name: TOO_SHY
+              value: "true"
+---
+# Inside, we both know what's been goin' on
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: inside-us
+  namespace: rickroll
+data:
+  goin_on: "true"
+---
+# We know the game, and we're gonna play it
+apiVersion: v1
+kind: Service
+metadata:
+  name: game
+  namespace: rickroll
+spec:
+  selector:
+    app: game
+  ports:
+    - name: play
+      port: 80
+---
+# [Pre-Chorus]
+# And if you ask me how I'm feeling
+apiVersion: v1
+kind: Event
+metadata:
+  name: ask-me-feeling
+  namespace: rickroll
+message: "And if you ask me how I'm feeling"
+reason: Ask
+type: Normal
+---
+# Don't tell me you're too blind to see
+apiVersion: v1
+kind: Pod
+metadata:
+  name: too-blind-to-see
+  namespace: rickroll
+spec:
+  restartPolicy: Never
+  containers:
+    - name: see
+      image: rickroll/see:latest
+      livenessProbe:
+        exec:
+          command: ["false"]
+---
+# [Chorus]
+# Never gonna give you up
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: never-give-you-up
+  namespace: rickroll
+spec:
+  suspend: true
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: give
+          image: rickroll/give-you-up:latest
+---
+# Never gonna let you down
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: never-let-you-down
+  namespace: rickroll
+spec:
+  suspend: true
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: let
+          image: rickroll/let-you-down:latest
+---
+# Never gonna run around and desert you
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: never-desert-you
+  namespace: rickroll
+spec:
+  suspend: true
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: desert
+          image: rickroll/desert-you:latest
+---
+# Never gonna make you cry
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: never-make-you-cry
+  namespace: rickroll
+spec:
+  suspend: true
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: make
+          image: rickroll/make-you-cry:latest
+---
+# Never gonna say goodbye
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: never-say-goodbye
+  namespace: rickroll
+spec:
+  suspend: true
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: say
+          image: rickroll/say-goodbye:latest
+---
+# Never gonna tell a lie and hurt you
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: never-lie-hurt-you
+  namespace: rickroll
+spec:
+  suspend: true
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: lie
+          image: rickroll/lie-and-hurt-you:latest
+---
+# [Chorus]
+# Never gonna give you up
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: encore-give-you-up
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: give
+              image: rickroll/give-you-up:latest
+---
+# Never gonna let you down
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: encore-let-you-down
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: let
+              image: rickroll/let-you-down:latest
+---
+# Never gonna run around and desert you
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: encore-desert-you
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: desert
+              image: rickroll/desert-you:latest
+---
+# Never gonna make you cry
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: encore-make-you-cry
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: make
+              image: rickroll/make-you-cry:latest
+---
+# Never gonna say goodbye
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: encore-say-goodbye
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: say
+              image: rickroll/say-goodbye:latest
+---
+# Never gonna tell a lie and hurt you
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: encore-lie-hurt-you
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: lie
+              image: rickroll/lie-and-hurt-you:latest
+---
+# Never gonna give you up
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: finale-give-you-up
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: give
+              image: rickroll/give-you-up:latest
+---
+# Never gonna let you down
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: finale-let-you-down
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: let
+              image: rickroll/let-you-down:latest
+---
+# Never gonna run around and desert you
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: finale-desert-you
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: desert
+              image: rickroll/desert-you:latest
+---
+# Never gonna make you cry
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: finale-make-you-cry
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: make
+              image: rickroll/make-you-cry:latest
+---
+# Never gonna say goodbye
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: finale-say-goodbye
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: say
+              image: rickroll/say-goodbye:latest
+---
+# Never gonna tell a lie and hurt you
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: finale-lie-hurt-you
+  namespace: rickroll
+spec:
+  schedule: "0 0 31 2 *"
+  suspend: true
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: lie
+              image: rickroll/lie-and-hurt-you:latest

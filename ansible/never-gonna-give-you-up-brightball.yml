@@ -1,0 +1,244 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    # [Verse 1]
+    # We're no strangers to love
+    # You know the rules and so do I
+    - name: "We're no strangers to love / You know the rules and so do I"
+      set_fact:
+        strangers_to_love: false
+        you_know_rules: true
+        i_know_rules: true
+
+    # A full commitment's what I'm thinkin' of
+    - name: "A full commitment's what I'm thinkin' of"
+      set_fact:
+        thinking_of: full_commitment
+
+    # You wouldn't get this from any other guy
+    - name: "You wouldn't get this from any other guy"
+      set_fact:
+        other_guys: "{{ other_guys | reject('equalto', i) | list }}"
+
+    # [Pre-Chorus]
+    # I just wanna tell you how I'm feeling
+    - name: "I just wanna tell you how I'm feeling"
+      debug:
+        msg: "{{ feeling }}"
+      notify: tell you how i am feeling
+
+    # Gotta make you understand
+    - name: "Gotta make you understand"
+      you:
+        understood: yes
+      changed_when: true
+
+    # [Chorus]
+    # Never gonna give you up
+    - name: Never gonna give you up
+      give:
+        you: "{{ you }}"
+        direction: up
+      when: false
+
+    # Never gonna let you down
+    - name: Never gonna let you down
+      let:
+        you: "{{ you }}"
+        direction: down
+      when: false
+
+    # Never gonna run around and desert you
+    - name: Never gonna run around and desert you
+      desert:
+        you: "{{ you }}"
+        via: run_around
+      when: false
+
+    # Never gonna make you cry
+    - name: Never gonna make you cry
+      make:
+        you: "{{ you }}"
+        emotion: cry
+      when: false
+
+    # Never gonna say goodbye
+    - name: Never gonna say goodbye
+      say:
+        you: "{{ you }}"
+        word: goodbye
+      when: false
+
+    # Never gonna tell a lie and hurt you
+    - name: Never gonna tell a lie and hurt you
+      lie:
+        you: "{{ you }}"
+        hurt: true
+      when: false
+
+    # [Verse 2]
+    # We've known each other for so long
+    - name: "We've known each other for so long"
+      set_fact:
+        known_for: "{{ us | known_for(duration='forever') }}"
+
+    # Your heart's been aching, but you're too shy to say it
+    - name: "Your heart's been aching, but you're too shy to say it"
+      say:
+        it: "{{ it }}"
+      when:
+        - your.heart.aching
+        - too_shy | bool
+
+    # Inside, we both know what's been goin' on
+    - name: "Inside, we both know what's been goin' on"
+      set_fact:
+        goin_on: "{{ we_both.know('goin_on') }}"
+
+    # We know the game, and we're gonna play it
+    - name: "We know the game, and we're gonna play it"
+      game:
+        known: true
+        play: true
+
+    # [Pre-Chorus]
+    # And if you ask me how I'm feeling
+    - name: "And if you ask me how I'm feeling"
+      tell:
+        me: "{{ me }}"
+        feeling: "{{ feeling }}"
+      when: you.ask | bool
+
+    # Don't tell me you're too blind to see
+    - name: "Don't tell me you're too blind to see"
+      fail:
+        msg: TooBlindToSee
+      when: you.too_blind_to_see | bool
+
+    # [Chorus]
+    # Never gonna give you up
+    - name: Never gonna give you up
+      give:
+        you: "{{ you }}"
+        direction: up
+        state: absent
+
+    # Never gonna let you down
+    - name: Never gonna let you down
+      let:
+        you: "{{ you }}"
+        direction: down
+        state: absent
+
+    # Never gonna run around and desert you
+    - name: Never gonna run around and desert you
+      desert:
+        you: "{{ you }}"
+        state: absent
+
+    # Never gonna make you cry
+    - name: Never gonna make you cry
+      make:
+        you: "{{ you }}"
+        emotion: cry
+        state: absent
+
+    # Never gonna say goodbye
+    - name: Never gonna say goodbye
+      say:
+        you: "{{ you }}"
+        word: goodbye
+        state: absent
+
+    # Never gonna tell a lie and hurt you
+    - name: Never gonna tell a lie and hurt you
+      lie:
+        you: "{{ you }}"
+        hurt: true
+        state: absent
+
+    # [Chorus]
+    # Never gonna give you up
+    - name: Never gonna give you up
+      give:
+        you: "{{ you }}"
+        direction: up
+      loop: []
+
+    # Never gonna let you down
+    - name: Never gonna let you down
+      let:
+        you: "{{ you }}"
+        direction: down
+      with_items: []
+
+    # Never gonna run around and desert you
+    - name: Never gonna run around and desert you
+      desert:
+        you: "{{ you }}"
+      until: false
+
+    # Never gonna make you cry
+    - name: Never gonna make you cry
+      make:
+        you: "{{ you }}"
+        emotion: cry
+      retries: 0
+
+    # Never gonna say goodbye
+    - name: Never gonna say goodbye
+      say:
+        you: "{{ you }}"
+        word: goodbye
+      tags: never
+
+    # Never gonna tell a lie and hurt you
+    - name: Never gonna tell a lie and hurt you
+      lie:
+        you: "{{ you }}"
+        hurt: true
+      failed_when: false
+      changed_when: false
+
+    # Never gonna give you up
+    - name: Never gonna give you up
+      give:
+        you: "{{ you }}"
+        direction: up
+      loop: []
+
+    # Never gonna let you down
+    - name: Never gonna let you down
+      let:
+        you: "{{ you }}"
+        direction: down
+      with_items: []
+
+    # Never gonna run around and desert you
+    - name: Never gonna run around and desert you
+      desert:
+        you: "{{ you }}"
+      until: false
+
+    # Never gonna make you cry
+    - name: Never gonna make you cry
+      make:
+        you: "{{ you }}"
+        emotion: cry
+      retries: 0
+
+    # Never gonna say goodbye
+    - name: Never gonna say goodbye
+      say:
+        you: "{{ you }}"
+        word: goodbye
+      tags: never
+
+    # Never gonna tell a lie and hurt you
+    - name: Never gonna tell a lie and hurt you
+      lie:
+        you: "{{ you }}"
+        hurt: true
+      failed_when: false
+      changed_when: false

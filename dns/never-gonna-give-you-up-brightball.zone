@@ -1,0 +1,127 @@
+$TTL 86400
+$ORIGIN never-gonna-give-you-up.rickroll.local.
+
+@   IN  SOA ns1.rickroll.local. hostmaster.rickroll.local. (
+            2026062101  ; serial
+            3600        ; refresh
+            1800        ; retry
+            604800      ; expire
+            86400 )     ; minimum
+    IN  NS  ns1.rickroll.local.
+    IN  NS  ns2.rickroll.local.
+    IN  TXT "gonna=false; ever=false"
+
+; [Verse 1]
+; We're no strangers to love
+; You know the rules and so do I
+us.love             IN  TXT "strangers=false; you-know-rules=true; i-know-rules=true"
+
+; A full commitment's what I'm thinkin' of
+thinking-of         IN  TXT "commitment=full"
+
+; You wouldn't get this from any other guy
+other-guys          IN  TXT "exclude=i; gives=false"
+
+; [Pre-Chorus]
+; I just wanna tell you how I'm feeling
+feeling             IN  TXT "just-wanna=tell; to=you"
+
+; Gotta make you understand
+you.understand      IN  TXT "understood=yes"
+
+; [Chorus]
+; Never gonna give you up
+; give-you-up         IN  A   198.18.0.1
+
+; Never gonna let you down
+; let-you-down        IN  A   198.18.0.2
+
+; Never gonna run around and desert you
+; run-around.desert   IN  A   198.18.0.3
+
+; Never gonna make you cry
+; make-you-cry        IN  A   198.18.0.4
+
+; Never gonna say goodbye
+; say-goodbye         IN  A   198.18.0.5
+
+; Never gonna tell a lie and hurt you
+; lie.hurt-you        IN  A   198.18.0.6
+
+; [Verse 2]
+; We've known each other for so long
+us                  IN  TXT "known-for=forever"
+
+; Your heart's been aching, but you're too shy to say it
+your.heart          IN  TXT "aching=true; too-shy=true"
+say.it              IN  CNAME your.heart.
+
+; Inside, we both know what's been goin' on
+inside.we-both      IN  TXT "know=goin-on"
+
+; We know the game, and we're gonna play it
+game                IN  TXT "known=true; play=true"
+
+; [Pre-Chorus]
+; And if you ask me how I'm feeling
+you.ask.me          IN  TXT "feeling=true"
+
+; Don't tell me you're too blind to see
+too-blind-to-see    IN  TXT "error=TooBlindToSee" ; NXDOMAIN
+
+; [Chorus]
+; Never gonna give you up
+give-you-up         IN  A   0.0.0.0
+
+; Never gonna let you down
+let-you-down        IN  A   0.0.0.0
+
+; Never gonna run around and desert you
+run-around.desert   IN  A   0.0.0.0
+
+; Never gonna make you cry
+make-you-cry        IN  A   0.0.0.0
+
+; Never gonna say goodbye
+say-goodbye         IN  A   0.0.0.0
+
+; Never gonna tell a lie and hurt you
+lie.hurt-you        IN  A   0.0.0.0
+
+; [Chorus]
+; Never gonna give you up
+give-you-up         IN  CNAME  nxdomain.
+
+; Never gonna let you down
+let-you-down        IN  SRV  0 0 0  .
+
+; Never gonna run around and desert you
+run-around.desert   IN  CNAME  give-you-up.
+
+; Never gonna make you cry
+make-you-cry        IN  AAAA  ::
+
+; Never gonna say goodbye
+say-goodbye         IN  TXT  "" ; REFUSED
+
+; Never gonna tell a lie and hurt you
+lie.hurt-you        IN  CAA  0 issue "never"
+
+; [Chorus]
+; Never gonna give you up
+give-you-up         IN  CNAME  nxdomain.
+
+; Never gonna let you down
+let-you-down        IN  SRV  0 0 0  .
+
+; Never gonna run around and desert you
+run-around.desert   IN  CNAME  give-you-up.
+
+; Never gonna make you cry
+make-you-cry        IN  AAAA  ::
+
+; Never gonna say goodbye
+say-goodbye         IN  TXT  "" ; REFUSED
+
+; Never gonna tell a lie and hurt you
+lie.hurt-you        IN  CAA  0 issue "never"
