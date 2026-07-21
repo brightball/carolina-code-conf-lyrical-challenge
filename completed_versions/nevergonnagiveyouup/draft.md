@@ -50,7 +50,7 @@ fn tellFeelings(you: her) void {                                  // Zig
 | You have reached your weekly limit! Purchase more tokens? |
 | --------------------------------------------------------- |
 
-> Do you know how I'm feeling right now? Ask.
+> Do you know how I'm feeling right now!?! Ask!
 
 | DANGEROUS OPERATION RESTRICTED: Too blind to see.         |
 | --------------------------------------------------------- |
