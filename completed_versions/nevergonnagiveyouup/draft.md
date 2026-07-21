@@ -1,4 +1,5 @@
-> `/plan` Project Astley. We're no strangers to love. We both know the rules. Thinking, full commitment. She wouldn't get this from any other guy.
+> `/plan` Project Astley. We're no strangers to love. We both know the rules. 
+> Thinking of `git commit -am "She wouldn't get this from any other guy"`
 
 | Review: It sounds like you want to tell her how you're feeling. |
 | --------------------------------------------------------------- |
