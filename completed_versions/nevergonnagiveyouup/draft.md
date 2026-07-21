@@ -28,7 +28,7 @@ fn tellFeelings(you: her) void {                                  // Zig
 ```fsharp
     |> run Around >> desert                                       // Clef
 ```
-```omd
+```ocaml
     |> make(~cry)                                                 (* OCaml *)
 ```
 ```java
