@@ -7,7 +7,7 @@ git commit -am "She wouldn't get this from any other guy"
 | Review: It sounds like you want to tell her how you're feeling. |
 | --------------------------------------------------------------- |
 
-> Yes! Approved. Execute the plan.
+> `/execute-plan` Yes! Approved. Execute the plan.
 
 ```php
 $self->giveUp($you);                                                // PHP 
