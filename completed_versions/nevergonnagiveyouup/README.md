@@ -1,8 +1,8 @@
-# Lyrical Code Challenge for the 2027 Carolina Code Conference
+# Lyrical Code Challenge for the 2026 Carolina Code Conference
 
-This will be our 5th year in a row with our polyglot, lyrical code t-shirt and we're excited!
+This will be our 4th year in a row with our polyglot, lyrical code t-shirt and we're excited!
 
-The goal is to turn these song lyrics (below) into code in any/every language you can think of. As entries come in if you think you can improve something, feel free to submit a PR doing exactly that. Assuming we get enough entries, we're going assemble the results into our 2027 Carolina Code Conference t-shirt.
+The goal is to turn these song lyrics (below) into code in any/every language you can think of. As entries come in if you think you can improve something, feel free to submit a PR doing exactly that. Assuming we get enough entries, we're going assemble the results into our 2026 Carolina Code Conference t-shirt.
 
 ## What do you mean, song lyrics as code?
 
@@ -15,9 +15,8 @@ Here are the results of our prior years:
 - 2023 - [Don't Stop Believing - Journey](https://github.com/brightball/carolina-code-conf-lyrical-challenge/blob/main/completed_versions/dontstopbelieving/final.md)
 - 2024 - [Bohemian Rhapsody - Queen](https://github.com/brightball/carolina-code-conf-lyrical-challenge/blob/main/completed_versions/bohemianrhapsody/final.md)
 - 2025 - [Allstar - Smash Mouth](https://github.com/brightball/carolina-code-conf-lyrical-challenge/blob/main/completed_versions/allstar/final.md)
-- 2026 - [Never Gonna Give You Up - Rick Astley](https://github.com/brightball/carolina-code-conf-lyrical-challenge/blob/main/completed_versions/nevergonnagiveyouup/final.md)
 
-For 2027...good times never seemed so good! After showing up in the nominations for years, Neil Diamond's "Sweet Caroline" finally took the crown. We let our 2026 conference attendees vote over 2 days, starting with an [initial round of 5 brackets](https://blog.carolina.codes/p/round-1-2027-lyrical-code-challenge), and Sweet Caroline won the final round.
+For 2026...we have been ["Rickrolled"](https://en.wikipedia.org/wiki/Rickrolling) (*smh*). We all saw it coming the moment that Rick Astley's "Never Gonna Give You Up" [appeared on the nominations](https://blog.carolina.codes/p/round-1-2026-lyrical-code-challenge) for this year...[and it did](https://blog.carolina.codes/p/final-four-2026-lyrical-code-challenge). Here's [this year's official announcement](https://blog.carolina.codes/i/171655195/weve-been-rickrolled) in the [2025 Recap Post](https://blog.carolina.codes/p/2025-recap-finally).
 
 ## How to submit a PR
 
@@ -26,11 +25,11 @@ To enter, fork this repo and add a directory for the language you want to use. T
 ```bash
 # Examples
 
-ruby/sweet-caroline-brightball.rb
+ruby/never-gonna-give-you-up-brightball.rb
 
-java/SweetCarolineBrightball.java
+java/NeverGonnaGiveYouUpBrightball.java
 
-elixir/sweet-caroline-brightball.exs
+elixir/never-gonna-give-you-up-brightball.exs
 ```
 
 Then just submit your PR! Bonus points and social media thank yous for broadcasting it and tagging us on your favorite social channels. You can do specific versese, specific lines or the entire song if you like!
@@ -39,54 +38,50 @@ Remember, it's more important that the code reads than actually compiles. This i
 
 Feel free to reference [prior year's entries](https://github.com/brightball/carolina-code-conf-lyrical-challenge/tree/main/completed_versions) for inspiration and examples.  Above all, have fun with it.
 
-## Sweet Caroline - Neil Diamond
+## Never Gonnag Give You Up - Rick Astley
 
-[Lyrics](https://genius.com/Neil-diamond-sweet-caroline-lyrics) | [Music Video](https://www.youtube.com/watch?v=4F_RCWVoL4s)
+[Lyrics](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics) | [Music Video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ```
 [Verse 1]
-Where it began
-I can't begin to know when
-But then I know it's growin' strong
-Was in the spring
-And spring became the summer
-Who'd have believed you'd come along?
+We're no strangers to love
+You know the rules and so do I
+A full commitment's what I'm thinkin' of
+You wouldn't get this from any other guy
 
 [Pre-Chorus]
-Hands, touchin' hands
-Reachin' out, touchin' me, touchin' you
+I just wanna tell you how I'm feeling
+Gotta make you understand
 
 [Chorus]
-Sweet Caroline
-Good times never seemed so good
-I've been inclined
-To believe they never would
-But now I
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
 
 [Verse 2]
-Look at the night
-And it don't seem so lonely
-We fill it up with only two
-And when I hurt
-Hurtin' runs off my shoulders
-How can I hurt when holdin' you?
+We've known each other for so long
+Your heart's been aching, but you're too shy to say it
+Inside, we both know what's been goin' on
+We know the game, and we're gonna play it
 
 [Pre-Chorus]
-Warm, touching warm
-Reachin' out, touchin' me, touchin' you
+And if you ask me how I'm feeling
+Don't tell me you're too blind to see
 
 [Chorus]
-Sweet Caroline
-Good times never seemed so good
-I've been inclined
-To believe they never would
-Oh no, no
-
-[Chorus]
-Sweet Caroline
-Good times never seemed so good
-Sweet Caroline
-I believe they never could
-Sweet Caroline
-Good times never seemed so good
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
 ```
