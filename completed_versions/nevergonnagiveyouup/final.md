@@ -1,7 +1,6 @@
 # Carolina Code Conference 2026
 ## The Polyglot and Cybersecurity Conference for All Who Code
 
-````
 > `/plan` Project Astley. We're no strangers to love. We both know the rules.
 
 ```bash
@@ -19,8 +18,10 @@ $self->giveUp($you);                                                // PHP
 
 > `/stop` I don't want to give her up!
 
+
 | You're exactly right! Correcting...                             |
 | --------------------------------------------------------------- |
+
 ```zig
 fn tellFeelings(you: her) void {                                  // Zig
 ```
@@ -47,14 +48,18 @@ fn tellFeelings(you: her) void {                                  // Zig
 }
 ```
 
+
 > `/goal` But we've known each other for so long! 
 > Her heart's been aching, she's just too shy to say it...
 > We know what's going on. We know the game. Let's play.
 
+
 | You have reached your weekly limit! Purchase more tokens? |
 | --------------------------------------------------------- |
 
+
 > `/btw` Do you know how I'm feeling right now!?! Ask!
+
 
 | DANGEROUS OPERATION RESTRICTED: Too blind to see.         |
 | --------------------------------------------------------- |
@@ -64,8 +69,8 @@ fn tellFeelings(you: her) void {                                  // Zig
     self.tellFeelings(her);         
   end
 ```
+
 > `/commit-push-pr`
-````
 
 # Lines separated for code highlighting in Github
 
